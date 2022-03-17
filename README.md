@@ -93,10 +93,10 @@
 ### Wireframes
 
 <details><summary>Mobile Design</summary>
-<img src="documentation/wireframes/mobile.png">
+<img src="documentation/wireframes/mobile.jpg">
 </details>
 <details><summary>Desktop Design</summary>
-<img src="documentation/wireframes/desktop.png">
+<img src="documentation/wireframes/desktop.jpg">
 </details>
 
 ## Technologies Used
