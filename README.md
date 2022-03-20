@@ -46,6 +46,10 @@
 - Find the location on the business.
 
 ### Site Owner Goals
+- Increase the number of customers through vistitors to the website.
+- Promote the company to new and existing users.
+- Provide a way for customers to contact the business for all queries.
+- Provide essential information to any one who needs it.
 
 
 ## User Experience
