@@ -60,7 +60,13 @@
 - This business is targeting other companies who require professional photography for an event.
 
 ### User Requirements and Expectations
-
+- The user can expect an Intuitive and accessible navigation system.
+- The user can expect easily find relevant information relating to the company and the products.
+- The user can expect all links work as expected and functions perform their tasks correctly.
+- The user can expect presentation is in line with the company guidelines and the website is visually appealing on all screen sizes.
+- The user can expect easy access to contact information.
+- The user can expect easy to read Headings to draw attention to the areas of interest to the customer.
+- The user can expect accessibility features.
 
 ### User Stories
  
