@@ -40,7 +40,10 @@
 ## Project Goals 
 
 ### User Goals
-
+- Having a portfolio website to show the clients work off in a eye catching way.
+- See a variety of the different types of work the client performs.
+- Find information about how to get in contact with the business.
+- Find the location on the business.
 
 ### Site Owner Goals
 
