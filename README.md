@@ -55,9 +55,12 @@
 ## User Experience
 
 ### Target Audience
-
+- This business is targeting first time users for bespoke photoshoots.
+- This business is targeting groups of individuals who want professional photographs of events.
+- This business is targeting other companies who require professional photography for an event.
 
 ### User Requirements and Expectations
+
 
 ### User Stories
  
