@@ -79,10 +79,15 @@
 
 ### Colour
 
-
+For the colour scheme the website owner has chosen to implement a dark and light theme while also adding alot of vibrant colours to make it very eye catching. To narrow down the colours I used https://coolors.co/ an example of both the dark and light theme are shown below.
 <br>
 
-![Colour scheme](documentation/features/color-palette.PNG)
+### Dark Mode
+![Dark Mode Theme](documentation/features/colour-palette-dark.png)
+<br>
+
+### Light Mode
+![Light Mode Theme](documentation/features/colour-palette-light.png)
 
 ### Fonts
  
