@@ -26,3 +26,34 @@ body {
 .header-200 {
     font-size: 200%;
 }
+
+/* Footer Styles */
+
+.nav-footer {
+    font-size: 150%;
+    list-style-type: none;
+    display: inline-block;
+    margin: 2%;
+}
+
+#nav-footer-outer {
+    text-align: center;
+}
+
+#social-networks-list {
+    height: 80px;
+}
+
+#social-networks-list .social-networks {
+    list-style-type: none;
+    float: left;
+}
+
+.social-networks {
+    height: 40px;
+    width: 40px;
+}
+
+#social-networks-list-outer {
+    text-align: center;
+}
