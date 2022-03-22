@@ -3,7 +3,7 @@
 
 ![Mock-up image](documentation/wireframes/am-i-responsive.JPG)
 
- [Live webpage](Insert New Link)
+ [Live webpage](https://benjamindraper1996.github.io/CI_PP2_FoxPhotography/)
 
 ## Table of Content
 
@@ -177,7 +177,7 @@ The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
 2. On the left-hand menu select Pages
 3. For the source select Branch: master
-4. After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at !!!INSERT LINK!!!
+4. After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at https://benjamindraper1996.github.io/CI_PP2_FoxPhotography/
 
 You can fork the repository by following these steps:
 1. Go to the GitHub repository
