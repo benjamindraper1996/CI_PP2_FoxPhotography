@@ -162,6 +162,32 @@ body {
     height: 300px;
 }
 
+/* Game Area Styles */
+#game-img-outer, #game-img, #game-area-outer, #game-area {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+}
+
+
+
+#game-img-outer {
+    background-color: aqua;
+    margin-bottom: 5%;
+}
+
+#game-img {
+    background-color: blue;
+}
+
+#game-area-outer {
+    background-color: burlywood;
+}
+
+#game-area {
+    background-color: blueviolet;
+}
+
 /* Footer Styles */
 
 .nav-footer {
