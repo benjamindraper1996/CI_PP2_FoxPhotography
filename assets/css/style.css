@@ -91,6 +91,15 @@ body {
     max-width: 60%;
     background-color: red;
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-text p {
+    font-size: 200%;
+    text-align: center;
+    margin: 0 10%;
 }
 
 /* Contact Form Styles */
