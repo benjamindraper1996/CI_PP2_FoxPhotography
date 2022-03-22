@@ -26,31 +26,33 @@
     </header>
     <!-- Spacer div -->
     <div style="height: 100px;"></div>
-    <div id="form-outer">
-        <form action="https://formdump.codeinstitute.net/">
-            <label class="label" for="name">Name</label>
-            <input id="name" type="text" name="name" class="input-box" required>
-            <label class="label" for="email">Email Address</label>
-            <input id="email" type="email" name="email-address" class="input-box" required>
-            <label class="label" for="message-box">Enquiry:</label>
-            <textarea id="message-box" name="message-box" placeholder="Write us a message here."></textarea>
-            <input id="submit" type="submit" value="Submit" />
-        </form>
-    </div>
-
-        
-
-    <h1>My address
-        <br>123 The Street
-        <br>Somewhere
-        <br>In The World
-    </h1>
-
-    <div>
-        <p>{Google maps API to go here}</p>
-    </div>
-
-
+    <section>
+        <div id="form-outer">
+            <form action="https://formdump.codeinstitute.net/">
+                <label class="label" for="name">Name</label>
+                <input id="name" type="text" name="name" class="input-box" required>
+                <label class="label" for="email">Email Address</label>
+                <input id="email" type="email" name="email-address" class="input-box" required>
+                <label class="label" for="message-box">Enquiry:</label>
+                <textarea id="message-box" name="message-box" placeholder="Write us a message here."></textarea>
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="location">
+            <div id="address">
+                <h1>My address
+                    <br>123 The Street
+                    <br>Somewhere
+                    <br>In The World
+                </h1>
+            </div>
+            <div>
+                <div id="map">
+                    <p>{Google maps API to go here}</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div>
             <!-- Footer Navigation Bar -->

@@ -107,9 +107,14 @@ body {
 }
 
 #form-outer {
-    margin: 0 5% 0 15%;
-    width: 40%;
+    margin: 0 0 0 15%;
+    width: 35%;
+    float: left;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
 }
 
 .input-box, #department {
@@ -130,6 +135,31 @@ body {
     width: 30%;
     margin: 10px 35%;
     border: 3px solid #000;
+}
+
+/* Address and Location Styles */
+
+#location {
+    float: right;
+    width: 35%;
+    margin: 0 15% 0 0;
+    background-color: green;
+    height: 700px;
+}
+
+#address, #map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 200%;
+    text-align: center;
+}
+
+#map {
+    margin: 5%;
+    background-color: #000;
+    height: 300px;
 }
 
 /* Footer Styles */
