@@ -44,16 +44,18 @@ body {
     height: 80px;
 }
 
-#social-networks-list .social-networks {
-    list-style-type: none;
-    float: left;
-}
-
-.social-networks {
-    height: 40px;
-    width: 40px;
-}
-
 #social-networks-list-outer {
     text-align: center;
 }
+
+#social-networks-list .social-networks {
+    list-style-type: none;
+    display: inline-block;
+    margin: 3%;
+}
+
+.social-networks img {
+    height: 100px;
+    width: 100px;
+}
+
