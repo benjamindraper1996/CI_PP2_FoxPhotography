@@ -43,7 +43,9 @@ body {
 }
 
 #hero {
-    background-color: none;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
 }
 
 /* Home Page Gallery Styles */
@@ -155,53 +157,59 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 300px;
     font-size: 150%;
     text-align: center;
+    border-radius: 25px;
+    border: 3px solid #000;
+    margin: 5%;
 }
 
 #address {
-    border-radius: 25px;
-    border: 3px solid #000;
-    margin: 5% 5% 0 5%;
-    
+    margin: 5%;
+    background-color: bisque;
 }
 
 #map {
-    margin: 5%;
-    background-color: #000;
-    height: 350px;
+    margin: 0 5%;
+    height: 300px;
+    width: 90%;
+}
+
+.mapouter, .gmap_canvas {
+    height:inherit;
+    width: 100%;
 }
 
 .mapouter {
     position:relative;
     text-align:right;
-    height:inherit;
-    width:600px;
 }
 
 .gmap_canvas {
     overflow:hidden;
     background:none
     !important;
-    height: inherit;
-    width: inherit;
 }
 
 .gmap_canvas iframe {
-    height: inherit;
-    width: inherit;
+    height:inherit;
+    width: 100%;    
     border-radius: 25px;
 }
 
 /* Game Area Styles */
-#game-img-outer, #game-img, #game-area-outer, #game-area {
-    height: 500px;
+#game-img-outer, #game-area-outer {
+    height: 600px;
     width: 70%;
     margin: auto;
 }
 
-
+#game-img, #game-area {
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
 
 #game-img-outer {
     background-color: aqua;
