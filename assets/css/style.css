@@ -108,16 +108,18 @@ body {
 
 #form-outer {
     margin: 0 0 0 15%;
-    width: 35%;
+    width: 34%;
     float: left;
     background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
+    border-radius: 25px;
+    border: 3px solid #000;
 }
 
-.input-box, #department {
+.input-box {
     width: 75%;
     margin: 0 10%;
     border: 3px solid #000;
@@ -141,25 +143,34 @@ body {
 
 #location {
     float: right;
-    width: 35%;
+    width: 34%;
     margin: 0 15% 0 0;
     background-color: green;
     height: 700px;
+    border-radius: 25px;
+    border: 3px solid #000;
 }
 
 #address, #map {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 250px;
     font-size: 150%;
     text-align: center;
+}
+
+#address {
+    border-radius: 25px;
+    border: 3px solid #000;
+    margin: 5% 5% 0 5%;
+    
 }
 
 #map {
     margin: 5%;
     background-color: #000;
-    height: 400px;
+    height: 350px;
 }
 
 .mapouter {
@@ -173,12 +184,14 @@ body {
     overflow:hidden;
     background:none
     !important;
-    height:inherit;
-    width:600px;
+    height: inherit;
+    width: inherit;
 }
 
 .gmap_canvas iframe {
     height: inherit;
+    width: inherit;
+    border-radius: 25px;
 }
 
 /* Game Area Styles */
