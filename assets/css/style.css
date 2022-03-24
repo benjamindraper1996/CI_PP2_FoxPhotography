@@ -91,11 +91,13 @@ body {
 
 .onleft img {
     height: inherit;
+    width: inherit;
     object-fit: cover;
 }
 
 .onright img {
     height: inherit;
+    width: inherit;
     object-fit: cover;
 }
 
