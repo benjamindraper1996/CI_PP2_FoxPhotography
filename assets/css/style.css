@@ -14,12 +14,9 @@ body {
 
 .spacer {
     height: 400px;
-    background-color: #1fb8ff;
-    width: 80%;
-    margin: 0 auto;
 }
 
-#gallery {
+#gallery, .spacer, #game, #footer {
     background-color: #1fb8ff;
     width: 80%;
     margin: 0 auto;
@@ -91,13 +88,7 @@ body {
     float: right;
 }
 
-.onleft img {
-    height: inherit;
-    width: inherit;
-    object-fit: cover;
-}
-
-.onright img {
+.onleft img, .onright img {
     height: inherit;
     width: inherit;
     object-fit: cover;
@@ -266,12 +257,6 @@ body {
 }
 
 /* Footer Styles */
-
-#footer {
-    background-color: #1fb8ff;
-    width: 80%;
-    margin: 0 auto;
-}
 
 .nav-footer {
     font-size: 150%;
