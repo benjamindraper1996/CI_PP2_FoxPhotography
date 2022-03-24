@@ -76,14 +76,12 @@ body {
 
 /* Home Page Gallery Styles */
 .imgsquare {
-    background-color: blue;
     width: 500px;
     height: 500px;
     display: inline-block;
 }
 
 .imgrectangle {
-    background-color: blue;
     width: 750px;
     height: 500px;
     display: inline-block;
