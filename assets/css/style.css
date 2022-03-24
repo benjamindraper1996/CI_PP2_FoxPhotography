@@ -72,7 +72,7 @@ body {
 }
 
 /* Home Page Gallery Styles */
-.imgsquare {
+.imgsquare, .imgrectangle {
     width: 500px;
     height: 500px;
     display: inline-block;
@@ -80,8 +80,6 @@ body {
 
 .imgrectangle {
     width: 750px;
-    height: 500px;
-    display: inline-block;
 }
 
 .onright {
@@ -149,18 +147,15 @@ body {
     border: 3px solid #000;
 }
 
-.input-box {
+.input-box, #message-box {
     width: 75%;
     margin: 0 10%;
     border: 3px solid #000;
 }
 
 #message-box {
-    width: 75%;
-    margin: 0 10%;
     height: 500px;
     resize: none;
-    border: 3px solid #000;
 }
 
 #submit {
@@ -200,7 +195,6 @@ body {
 
 #map {
     margin: 0 5%;
-    height: 300px;
     width: 90%;
 }
 
@@ -258,28 +252,22 @@ body {
 
 /* Footer Styles */
 
-.nav-footer {
-    font-size: 150%;
+#social-networks-list, .social-networks, .nav-footer {
     list-style-type: none;
     display: inline-block;
+}
+
+.nav-footer {
+    font-size: 150%;
     margin: 2%;
 }
 
-#nav-footer-outer {
+#nav-footer-outer, #social-networks-list-outer {
     text-align: center;
 }
 
 #social-networks-list {
     height: 80px;
-}
-
-#social-networks-list-outer {
-    text-align: center;
-}
-
-#social-networks-list, .social-networks {
-    list-style-type: none;
-    display: inline-block;
 }
 
 .social-networks img {
