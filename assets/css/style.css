@@ -10,6 +10,22 @@ body {
     height: 100%;
 }
 
+/* Background Style */
+
+.spacer {
+    height: 400px;
+    background-color: #1fb8ff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#gallery {
+    background-color: #1fb8ff;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
 /* Header and Hero Styles */
 .header-text, .about-text {
     text-align: center;
@@ -34,16 +50,22 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#home-header, #home-header a {
+    color: #5eff24;
+    text-decoration: none;
+}
+
 .header-box {
-    width: 70%;
-    background-color: red;
+    width: 80%;
     height: 750px;
-    margin: 0 15%;
+    margin: 0 auto;
     position: relative;
+    background-color: #1fb8ff;
 }
 
 #hero {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
     height: inherit;
     object-fit: cover;
 }
@@ -64,20 +86,26 @@ body {
 }
 
 .onright {
-    margin-left: 2.5%;
+    float: right;
 }
 
-.onleft {
-    margin-right: 2.5%;
+.onleft img {
+    height: inherit;
+    object-fit: cover;
+}
+
+.onright img {
+    height: inherit;
+    object-fit: cover;
 }
 
 #imgpairs {
-    margin: 5% 15%;
+    padding: 5%;
 }
 
 /* About Page Styles */
 #about-me {
-    margin: 5% 15%;
+    margin: 5% 0;
 }
 
 #about-me-img {
@@ -229,6 +257,12 @@ body {
 }
 
 /* Footer Styles */
+
+#footer {
+    background-color: #1fb8ff;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .nav-footer {
     font-size: 150%;
