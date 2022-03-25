@@ -1,4 +1,3 @@
-var curindex=0
 const blackWhitePath = "assets/images/black-white/"
 const graffitiBlueHairPath = "assets/images/graffiti-blue-hair/"
 const graffitiHatPath = "assets/images/graffiti-hat/"
@@ -8,34 +7,25 @@ const pinkBenchPath = "assets/images/pink-bench/"
 const pinkWindowsPath = "assets/images/pink-windows/"
 const suffix = ".jpg"
 
-var orangeBenchArray=new Array()
+list = ["blackWhite", "graffitiBlueHair", "graffitiHat", "greenscreen", "orangeBench", "pinkBench", "pinkWindows"];
 
-	orangeBenchArray[0]=`${orangeBenchPath}1${suffix}`
-	orangeBenchArray[1]=`${orangeBenchPath}2${suffix}`
-	orangeBenchArray[2]=`${orangeBenchPath}3${suffix}`
-	orangeBenchArray[3]=`${orangeBenchPath}4${suffix}`
-	orangeBenchArray[4]=`${orangeBenchPath}5${suffix}`
-	orangeBenchArray[5]=`${orangeBenchPath}6${suffix}`
-    orangeBenchArray[6]=`${orangeBenchPath}7${suffix}`
-    orangeBenchArray[7]=`${orangeBenchPath}8${suffix}`
-    orangeBenchArray[8]=`${orangeBenchPath}9${suffix}`
-
-var preload=new Array()
-
-for (n=0;n<orangeBenchArray.length;n++)
-{
-	preload[n]=new Image()
-	preload[n].src=orangeBenchArray[n]
-}
-
-document.getElementsByName('<img name="orangebench" src="'+orangeBenchArray[Math.floor(Math.random()*(orangeBenchArray.length))]+'">')
-
-function rotateimage() {
-	if (curindex==(tempindex=Math.floor(Math.random()*(orangeBenchArray.length)))){
-		curindex=curindex==0? 1 : curindex-1
-	} else {
-		curindex=tempindex
-		document.images.orangebench.src=orangeBenchArray[curindex]
+function rotateimage(tags) {
+	let x = (Math.floor(Math.random()*3)+1);
+	if (tags === blackWhite) {
+		document.getElementsByName("blackWhite").src=`${blackWhitePath}${x}${suffix}`;
+	} else if (tags === graffitiBlueHair) {
+		document.getElementsByName("graffitiBlueHair").src=`${graffitiBlueHairPath}${x}${suffix}`;
+	} else if (tags === graffitiHat) {
+		document.getElementsByName("graffitiHat").src=`${graffitiHatPath}${x}${suffix}`;
+	} else if(tags === greenscreen) {
+		document.getElementsByName("greenscreen").src=`${greenscreenPath}${x}${suffix}`;
+	} else if(tags === orangeBench) {
+		document.getElementsByName("orangeBench").src=`${orangeBenchPath}${x}${suffix}`;
+	} else if(tags === pinkBench) {
+		document.getElementsByName("pinkBench").src=`${pinkBenchPath}${x}${suffix}`;
+	} else if(tags === pinkWindows) {
+		document.getElementsByName("pinkWindows").src=`${pinkWindowsPath}${x}${suffix}`;
 	}
 }
-setInterval("rotateimage()",(Math.floor(Math.random()*15000)))
+
+setInterval(rotateimage(list[Math.floor(Math.random()*7)])), (Math.floor(Math.random()*5000))
