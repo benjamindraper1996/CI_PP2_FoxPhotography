@@ -1,8 +1,16 @@
-var delay=5000 //set delay in miliseconds
 var curindex=0
-var orangeBenchPath = "assets/images/orange-bench/"
-var suffix = ".jpg"
+const orangeBenchPath = "assets/images/orange-bench/"
+const suffix = ".jpg"
 
+var orangeBenchArray=new Array()
+	var obt = 9;
+	for (obt=0;obt<orangeBenchArray.length;n++) {
+		
+	}
+
+
+
+/*
 var orangeBenchArray=new Array()
 
 	orangeBenchArray[0]=`${orangeBenchPath}1${suffix}`
@@ -14,7 +22,7 @@ var orangeBenchArray=new Array()
     orangeBenchArray[6]=`${orangeBenchPath}7${suffix}`
     orangeBenchArray[7]=`${orangeBenchPath}8${suffix}`
     orangeBenchArray[8]=`${orangeBenchPath}9${suffix}`
-
+*/
 var preload=new Array()
 
 for (n=0;n<orangeBenchArray.length;n++)
@@ -33,4 +41,4 @@ function rotateimage() {
 		document.images.orangebench.src=orangeBenchArray[curindex]
 	}
 }
-setInterval("rotateimage()",delay)
+setInterval("rotateimage()",(Math.floor(Math.random()*15000)))
