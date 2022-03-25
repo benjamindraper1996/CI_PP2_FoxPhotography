@@ -1,5 +1,11 @@
 var curindex=0
+const blackWhitePath = "assets/images/black-white/"
+const graffitiHatPath = "assets/images/graffiti-hat/"
+const graffitiBlueHairPath = "assets/images/graffiti-blue-hair/"
+const greenscreenPath = "assets/images/greenscreen/"
 const orangeBenchPath = "assets/images/orange-bench/"
+const pinkBenchPath = "assets/images/pink-bench/"
+const pinkWindowsPath = "assets/images/pink-windows/"
 const suffix = ".jpg"
 
 
