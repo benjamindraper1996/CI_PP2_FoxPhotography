@@ -16,9 +16,9 @@ body {
     height: 400px;
 }
 
-#gallery, .spacer, #game, #footer {
+#gallery, .spacer, #game, #footer, .header-box {
     background-color: #1fb8ff;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     
 }
@@ -46,7 +46,7 @@ body {
 
 #home-header, #about-header, #contact-header {
     position: absolute;
-    top: 15%;
+    top: 7.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -57,11 +57,8 @@ body {
 }
 
 .header-box {
-    width: 80%;
     height: 750px;
-    margin: 0 auto;
     position: relative;
-    background-color: #1fb8ff;
 }
 
 #hero {
