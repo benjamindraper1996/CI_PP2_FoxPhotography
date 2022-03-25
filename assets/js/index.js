@@ -2,11 +2,21 @@ var curindex=0
 const orangeBenchPath = "assets/images/orange-bench/"
 const suffix = ".jpg"
 
-var orangeBenchArray=new Array()
-	var obt = 9;
-	for (obt=0;obt<orangeBenchArray.length;n++) {
-		
+
+function createArray(pictures) {
+	if (pictures === orangeBenchArray){
+		var orangeBenchArray=new Array()
+		var numOfImg = 9;
+		for (var x=1; x<=numOfImg; ++x) { 
+			myImages[x] = new Image();
+			myImages[x].src = orangeBenchPath + x + imgSuffix; 
+		} 
+		return true;
+		} else {
+			return
 	}
+}
+
 
 
 
@@ -22,7 +32,7 @@ var orangeBenchArray=new Array()
     orangeBenchArray[6]=`${orangeBenchPath}7${suffix}`
     orangeBenchArray[7]=`${orangeBenchPath}8${suffix}`
     orangeBenchArray[8]=`${orangeBenchPath}9${suffix}`
-*/
+
 var preload=new Array()
 
 for (n=0;n<orangeBenchArray.length;n++)
@@ -30,7 +40,8 @@ for (n=0;n<orangeBenchArray.length;n++)
 	preload[n]=new Image()
 	preload[n].src=orangeBenchArray[n]
 }
-
+*/
+document.getElementsByTagName("img")
 document.write('<img name="orangebench" src="'+orangeBenchArray[Math.floor(Math.random()*(orangeBenchArray.length))]+'">')
 
 function rotateimage() {
