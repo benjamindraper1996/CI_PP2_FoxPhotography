@@ -8,78 +8,6 @@ const pinkBenchPath = "assets/images/pink-bench/"
 const pinkWindowsPath = "assets/images/pink-windows/"
 const suffix = ".jpg"
 
-let gallery = document.getElementsByName("pictures");
-
-function createArray(pictures) {
-	if (pictures === blackWhite) {
-		var blackWhiteArray=new Array()
-		var numOfImg = 6;
-		for (var x=1; x<=numOfImg; ++x) {
-			myImages[x] = new Image();
-			myImages[x].src = blackWhitePath + x + imgSuffix;
-		} return blackWhiteArray;
-	} else if (pictures === graffitiBlueHair) {
-		var graffitiBlueHairArray=new Array()
-		var numOfImg = 4;
-		for (var x=1; x<=numOfImg; ++x) {
-			myImages[x] = new Image();
-			myImages[x].src = graffitiBlueHairPath + x + imgSuffix;
-		}
-		return graffitiBlueHairArray;
-	} else if (pictures === graffitiHat) {
-		var graffitiHatArray=new Array()
-		var numOfImg = 3;
-		for (var x=1; x<=numOfImg; ++x) {
-			myImages[x] = new Image();
-			myImages[x].src = graffitiHatPath + x + imgSuffix;
-		}
-		return graffitiHatArray;
-	} else if (pictures === greenscreen) {
-		var greenscreenArray=new Array()
-		var numOfImg = 4;
-		for (var x=1; x<=numOfImg; ++x) {
-			myImages[x] = new Image();
-			myImages[x].src = greenscreenPath + x + imgSuffix;
-		}
-		return greenscreenArray;
-	} else if (pictures === orangeBench) {
-		var orangeBenchArray=new Array()
-		var numOfImg = 9;
-		for (var x=1; x<=numOfImg; ++x) { 
-			myImages[x] = new Image();
-			myImages[x].src = orangeBenchPath + x + imgSuffix;
-		}
-		return orangeBenchArray;
-	} else if (pictures === pinkBench) {
-		var pinkBenchArray=new Array()
-		var numOfImg = 8;
-		for (var x=1; x<=numOfImg; ++x) { 
-			myImages[x] = new Image();
-			myImages[x].src = pinkBenchPath + x + imgSuffix;
-		}
-		return pinkBenchArray;
-	} else if (pictures === pinkWindows) {
-		var pinkWindowsArray=new Array()
-		var numOfImg = 9;
-		for (var x=1; x<=numOfImg; ++x) { 
-			myImages[x] = new Image();
-			myImages[x].src = pinkWindowsPath + x + imgSuffix;
-		}
-		return pinkWindowsArray;
-	}
-}
-
-function rotateimage() {
-	if (curindex==(tempindex=Math.floor(Math.random()*(createArray(pictures).length)))){
-		curindex=curindex==0? 1 : curindex-1
-	} else {
-		curindex=tempindex
-		document.images.pictures.src=orangeBenchArray[curindex]
-	}
-}
-setInterval("rotateimage()",(Math.floor(Math.random()*15000)))
-
-/*
 var orangeBenchArray=new Array()
 
 	orangeBenchArray[0]=`${orangeBenchPath}1${suffix}`
@@ -100,6 +28,14 @@ for (n=0;n<orangeBenchArray.length;n++)
 	preload[n].src=orangeBenchArray[n]
 }
 
-document.getElementsByTagName("img")
-document.write('<img name="orangebench" src="'+orangeBenchArray[Math.floor(Math.random()*(orangeBenchArray.length))]+'">')
-*/
+document.getElementsByName('<img name="orangebench" src="'+orangeBenchArray[Math.floor(Math.random()*(orangeBenchArray.length))]+'">')
+
+function rotateimage() {
+	if (curindex==(tempindex=Math.floor(Math.random()*(orangeBenchArray.length)))){
+		curindex=curindex==0? 1 : curindex-1
+	} else {
+		curindex=tempindex
+		document.images.orangebench.src=orangeBenchArray[curindex]
+	}
+}
+setInterval("rotateimage()",(Math.floor(Math.random()*15000)))
