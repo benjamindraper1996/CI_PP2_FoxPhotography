@@ -245,6 +245,28 @@ body {
 
 #game-area {
     background-color: blueviolet;
+    border: 3px solid black;
+    position: relative;
+    margin: auto auto;
+    margin-top: 50px;
+}
+
+li.tile {
+
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border: 3px solid black;
+	position: absolute;
+	transition: 0.3s;
+	cursor: pointer;
+	background-size: contain;
+    background-color: #5eff24;
+}
+
+#blank {
+	cursor: default;
+	border: none;
 }
 
 /* Footer Styles */
