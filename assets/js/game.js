@@ -62,3 +62,56 @@ function tileClick () {
         });
     }
 }
+
+/* randomizes the slides */
+function shuffleSlides(array) {
+    var a = Math.floor(((Math.random()*150)+150));
+    var bottomRight = [-3,-1];
+	var bottomLeft = [-3,1];
+	var topRight = [3,-1];
+	var topLeft = [3,1];
+	var middleRight = [-1,-3,3];
+	var middleLeft = [1,3,-3];
+	var middleTop = [1,-1,3];
+	var middleBottom = [1,-1,-3];
+	var middle = [1,3,-3,-1];
+    var moves;
+
+    for(i=0; i<a; i++) {				
+        var position = Array.prototype.indexOf.call(array,game.blanktile);
+
+        if(position == 0){
+            moves = topLeft;
+        }
+        if (position == 1) {
+            moves = middleTop;
+        }
+        if(position == 2){
+            moves = topRight;
+        }
+        if(position == 3){
+            moves = middleLeft;
+        }
+        if(position == 4){
+            moves = middle;
+        }
+        if(position == 5){
+            moves = middleRight;
+        }
+        if (position == 6) {
+            moves = bottomLeft;
+        }
+        if (position == 7) {
+            moves = middleBottom
+        }
+        if (position == 8) {
+            moves = bottomRight;
+        }
+
+        move = moves[Math.floor(Math.random()*moves.length)];
+        console.log(position);
+        array[position] = array[position+move];
+        array[position+move] = game.blanktile;
+    }
+    return array
+}
