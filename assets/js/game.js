@@ -47,9 +47,18 @@ function setGameImage(folderpath) {
 function tileClick () {
     for (i=0; i<game.slides.length; i++) {
         game.slides[i].addEventListener('click', function() {
-            shiftSlide(this);
-            winGame();
+            shiftSlide(this); // Needs to be set
+            winGame(); // Needs to be set
         });
     }
 
+    /* Resets and shuffles the game board */
+    for (i=0; i<game.imgSelect.length; i++) {
+        game.imgSelect[i].addEventListener('click', function(){
+            game.slides = Array.from(document.getElementsByClassName('slide'));
+            setGameImage(this.name);
+            setSlides(game); // Needs to be set
+            game.gameAreaOuter.style.display = "none";
+        });
+    }
 }
