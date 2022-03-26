@@ -57,7 +57,7 @@ function tileClick () {
         game.imgSelect[i].addEventListener('click', function(){
             game.slides = Array.from(document.getElementsByClassName('slide'));
             setGameImage(this.name);
-            setSlides(game); // Needs to be set
+            setSlides(game);
             game.gameAreaOuter.style.display = "none";
         });
     }
@@ -114,4 +114,29 @@ function shuffleSlides(array) {
         array[position+move] = game.blanktile;
     }
     return array
+}
+
+/* Function to set slides */
+function setSlides(gameobject) {
+    var x = gameobject.slides
+    x = shuffleSlides(x);
+    var set = [[x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8]]];
+
+    for(i =0; i<3;i++){
+        position = (Array.prototype.indexOf.call(set[0],set[0][i]))*200
+        set[0][i].style.top = "0px";
+        set[0][i].style.left = position.toString()+"px";
+    }
+
+	for(i =0; i<3;i++){
+        position = (Array.prototype.indexOf.call(set[1],set[1][i]))*200
+		set[1][i].style.top = "200px";
+		set[1][i].style.left = position.toString()+"px";
+    }
+
+	for(i =0; i<3;i++){
+        position = (Array.prototype.indexOf.call(set[2],set[2][i]))*200
+		set[2][i].style.top = "400px";
+		set[2][i].style.left = position.toString()+"px";
+    }
 }
