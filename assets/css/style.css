@@ -225,9 +225,10 @@ body {
 }
 
 #game-img, #game-area {
+    margin: auto;
     height: 600px;
     width: 600px;
-    margin: auto;
+
 }
 
 #game-img-outer {
@@ -240,15 +241,18 @@ body {
 }
 
 #game-area-outer {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.5s;
     background-color: burlywood;
 }
 
+
 #game-area {
     background-color: blueviolet;
-    border: 3px solid black;
     position: relative;
     margin: auto auto;
-    margin-top: 50px;
 }
 
 li.tile {
@@ -256,7 +260,6 @@ li.tile {
 	display: inline-block;
 	height: 200px;
 	width: 200px;
-	border: 3px solid black;
 	position: absolute;
 	transition: 0.3s;
 	cursor: pointer;
@@ -267,6 +270,24 @@ li.tile {
 #blank {
 	cursor: default;
 	border: none;
+}
+
+.img-select {
+    height: 120px;
+    width: 120px;
+    float: none;
+}
+
+#image-selector {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#image-select-title {
+    margin-top: 20%;
+    font-size: 150%;
+    text-decoration: underline 3px #000;
 }
 
 /* Footer Styles */
