@@ -12,6 +12,7 @@
     --headerfont-color: #5eff24;
     --slider-color: #5eff24;
     --background-color: #fff;
+    --underline-color: #ff00b3;
 }
 
 .dark-theme {
@@ -22,6 +23,7 @@
     --headerfont-color:#0a60ff;
     --slider-color: #00a31e;
     --background-color: #000;
+    --underline-color: #8920b0;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 }
 
 .header-text a:hover {
-    border-bottom: 3px solid #ff00b3;
+    border-bottom: 3px solid var(--underline-color);
 }
 
 .header-400 {

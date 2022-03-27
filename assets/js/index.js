@@ -12,9 +12,9 @@ var graffitiBlueHair = new Array()
 	graffitiBlueHair[2] = "assets/images/graffiti-blue-hair/3.jpg";
 
 var pinkWindows = new Array()
-	pinkWindows[0] = "assets/images/pink-Windows/1.jpg";
-	pinkWindows[1] = "assets/images/pink-Windows/2.jpg";
-	pinkWindows[2] = "assets/images/pink-Windows/3.jpg";
+	pinkWindows[0] = "assets/images/pink-windows/1.jpg";
+	pinkWindows[1] = "assets/images/pink-windows/2.jpg";
+	pinkWindows[2] = "assets/images/pink-windows/3.jpg";
 
 var graffitiHat = new Array()
 	graffitiHat[0] = "assets/images/graffiti-hat/1.jpg";
@@ -54,14 +54,6 @@ for (n=0;n<pinkBench.length;n++) {
 	preload[n].src=orangeBench[n]
 	preload[n].src=pinkBench[n]
 }
-
-document.write('<img class="defaultimage" src="assets/images/black-white/1.jpg"'+blackwhite[Math.floor(Math.random()*(blackwhite.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/graffiti-blue-hair/1.jpg"'+graffitiBlueHair[Math.floor(Math.random()*(graffitiBlueHair.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/pink-windows/1.jpg"'+pinkWindows[Math.floor(Math.random()*(pinkWindows.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/graffiti-hat/1.jpg"'+graffitiHat[Math.floor(Math.random()*(graffitiHat.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/greenscreen/1.jpg"'+greenscreen[Math.floor(Math.random()*(greenscreen.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/orange-bench/1.jpg"'+orangeBench[Math.floor(Math.random()*(orangeBench.length))]+'">')
-document.write('<img class="defaultimage" src="assets/images/pink-bench/1.jpg"'+pinkBench[Math.floor(Math.random()*(pinkBench.length))]+'">')
 
 function rotateimage() {
 	if (curindex==(tempindex=Math.floor(Math.random()*3))){
