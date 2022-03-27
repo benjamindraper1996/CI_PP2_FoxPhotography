@@ -28,6 +28,7 @@ body {
     font-weight: 300;
     position: relative;
     height: 100%;
+    background-color: var(--background-color);
 }
 
 /* Background Style */
@@ -37,10 +38,8 @@ body {
 }
 
 #gallery, .spacer, #game, #footer, .header-box {
-    background-color: #1fb8ff;
     width: 95%;
     margin: 0 auto;
-    
 }
 
 /* Header and Hero Styles */
@@ -72,7 +71,8 @@ body {
 }
 
 #home-header, #home-header a {
-    color: #5eff24;
+    color: var(--headerfont-color);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
     text-decoration: none;
 }
 
@@ -82,8 +82,7 @@ body {
 }
 
 #hero {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
     height: inherit;
     object-fit: cover;
 }
