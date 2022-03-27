@@ -4,6 +4,17 @@
     border: none;
 }
 
+:root {
+    --menu-color: #fff;
+    --font-color: #ff00b3;
+    --button-color: #1fb8ff;
+    --buttonbgd-color: #1fb8ff;
+    --headerfont-color: #5eff24;
+    --slider-color: #5eff24;
+    --background-color: #fff;
+
+}
+
 body {
     font-weight: 300;
     position: relative;
