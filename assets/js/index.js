@@ -35,3 +35,48 @@ var pinkBench = new Array()
 	pinkBench[0] = "assets/images/pink-bench/1.jpg";
 	pinkBench[1] = "assets/images/pink-bench/2.jpg";
 	pinkBench[2] = "assets/images/pink-bench/3.jpg";
+
+var preload = new Array
+
+for (n=0;n<blackwhite.length;n++)
+for (n=0;n<graffitiBlueHair.length;n++)
+for (n=0;n<pinkWindows.length;n++)
+for (n=0;n<graffitiHat.length;n++)
+for (n=0;n<greenscreen.length;n++)
+for (n=0;n<orangeBench.length;n++)
+for (n=0;n<pinkBench.length;n++) {
+	preload[n]=new Image()
+	preload[n].src=blackwhite[n]
+	preload[n].src=graffitiBlueHair[n]
+	preload[n].src=pinkWindows[n]
+	preload[n].src=graffitiHat[n]
+	preload[n].src=greenscreen[n]
+	preload[n].src=orangeBench[n]
+	preload[n].src=pinkBench[n]
+}
+
+document.write('<img class="defaultimage" src="assets/images/black-white/1.jpg"'+blackwhite[Math.floor(Math.random()*(blackwhite.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/graffiti-blue-hair/1.jpg"'+graffitiBlueHair[Math.floor(Math.random()*(graffitiBlueHair.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/pink-windows/1.jpg"'+pinkWindows[Math.floor(Math.random()*(pinkWindows.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/graffiti-hat/1.jpg"'+graffitiHat[Math.floor(Math.random()*(graffitiHat.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/greenscreen/1.jpg"'+greenscreen[Math.floor(Math.random()*(greenscreen.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/orange-bench/1.jpg"'+orangeBench[Math.floor(Math.random()*(orangeBench.length))]+'">')
+document.write('<img class="defaultimage" src="assets/images/pink-bench/1.jpg"'+pinkBench[Math.floor(Math.random()*(pinkBench.length))]+'">')
+
+function rotateimage() {
+	if (curindex==(tempindex=Math.floor(Math.random()*3))){
+		curindex=curindex==0? 1 : curindex-1
+		}
+		else
+		curindex=tempindex
+
+		document.images.blackWhite.src=blackwhite[curindex]
+		document.images.graffitiBlueHair.src=graffitiBlueHair[curindex]
+		document.images.pinkWindows.src=pinkWindows[curindex]
+		document.images.graffitiHat.src=graffitiHat[curindex]
+		document.images.greenscreen.src=greenscreen[curindex]
+		document.images.orangeBench.src=orangeBench[curindex]
+		document.images.pinkBench.src=pinkBench[curindex]
+}
+
+setInterval("rotateimage()", 1000)
