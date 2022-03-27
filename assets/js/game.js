@@ -116,10 +116,10 @@ function shuffleSlides(array) {
 }
 
 /* Function to set slides */
-function setSlides(gameobject) {
-    var x = gameobject.slides
+function setSlides() {
+    var x = game.slides;
     x = shuffleSlides(x);
-    var set = [[x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7], x[8]]];
+    var set = [[x[0],x[1],x[2]],[x[3],x[4],x[5]],[x[6],x[7],x[8]]];
     
     for (i=0; i<3; i++) {
         position = (Array.prototype.indexOf.call(set[0],set[0][i]))*200
@@ -128,7 +128,7 @@ function setSlides(gameobject) {
     }
 
 	for (i=0; i<3; i++) {
-        position = (Array.prototype.indexOf.call(set[1],set[(1*i)]))*200
+        position = (Array.prototype.indexOf.call(set[1],set[1][i]))*200
 		set[1][i].style.top = "200px";
 		set[1][i].style.left = position.toString()+"px";
     }
@@ -169,12 +169,12 @@ function moveRight(slide){
     var current_posX = slide.style.left;
     var res = current_posX.split('px')[0];
     current = eval(res);
-    slide.style.left = (current+113).toString()+"px";
+    slide.style.left = (current+200).toString()+"px";
     var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
     var current_blank_posX = game.empty.style.left;
     var res_blank = current_blank_posX.split('px')[0];
     var current_blank = eval(res_blank);
-    game.empty.style.left = (current_blank-113).toString()+"px"; 
+    game.empty.style.left = (current_blank-200).toString()+"px"; 
     game.slides[blank_position] = game.slides[position]
     game.slides[position] = game.empty; 
 }
@@ -194,12 +194,12 @@ function moveLeft(slide){
     var current_posX = slide.style.left;
     var res = current_posX.split('px')[0];
     current = eval(res);
-    slide.style.left = (current-113).toString()+"px";
+    slide.style.left = (current-200).toString()+"px";
     var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
     var current_blank_posX = game.empty.style.left;
     var res_blank = current_blank_posX.split('px')[0];
     var current_blank = eval(res_blank);
-    game.empty.style.left = (current_blank+113).toString()+"px";
+    game.empty.style.left = (current_blank+200).toString()+"px";
     game.slides[blank_position] = game.slides[position]
     game.slides[position] = game.empty;
 }
@@ -219,12 +219,12 @@ function moveTop(slide){
     var current_posY = slide.style.top;
     var res = current_posY.split('px')[0];
     current = eval(res);
-    slide.style.top = (current-113).toString()+"px";
+    slide.style.top = (current-200).toString()+"px";
     var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
     var current_blank_posY = game.empty.style.top;
     var res_blank = current_blank_posY.split('px')[0];
     var current_blank = eval(res_blank);
-    game.empty.style.top = (current_blank + 113).toString()+"px";
+    game.empty.style.top = (current_blank + 200).toString()+"px";
     game.slides[blank_position] = game.slides[position]
     game.slides[position] = game.empty;
 }
@@ -244,12 +244,12 @@ function moveDown(slide){
     var current_posY = slide.style.top;
     var res = current_posY.split('px')[0];
     current = eval(res);
-    slide.style.top = (current+113).toString()+"px";
+    slide.style.top = (current+200).toString()+"px";
     var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
     var current_blank_posY = game.empty.style.top;
     var res_blank = current_blank_posY.split('px')[0];
     var current_blank = eval(res_blank);
-    game.empty.style.top = (current_blank - 113).toString()+"px";
+    game.empty.style.top = (current_blank - 200).toString()+"px";
     game.slides[blank_position] = game.slides[position]
     game.slides[position] = game.empty;
 }
@@ -270,8 +270,8 @@ function win() {
     }
 }
 
-(function (global) {
+(function () {
     setGameImage();
 	slideClick();
-	setSlides(global);
+	setSlides();
 }(game));
