@@ -15,6 +15,7 @@
     --underline-color: #ff00b3;
     --secondary-color: #1fb8ff;
     --third-color: #ff00b3;
+    --hamburger-light-theme: assets/images/HamburgerLightTheme.png;
 }
 
 .dark-theme {
@@ -28,6 +29,7 @@
     --underline-color: #8920b0;
     --secondary-color: #0a60ff;
     --third-color: #8920b0;
+    --hamburger-light-theme: assets/images/HamburgerDarkTheme.png;
 }
 
 body {
@@ -40,7 +42,7 @@ body {
 /* Background Style */
 
 .spacer {
-    height: 400px;
+    height: 200px;
 }
 
 #gallery, .spacer, #game, #footer, .header-box {
@@ -49,8 +51,16 @@ body {
 }
 
 /* Header and Hero Styles */
-.header-text, .about-text {
+.header-text a {
+    text-decoration: none;
+    color: var(--headerfont-color);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.header-text {
     text-align: center;
+    color: var(--headerfont-color);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 
 .header-text a:hover {
@@ -76,12 +86,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#home-header, #home-header a {
-    color: var(--headerfont-color);
-    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
-    text-decoration: none;
-}
-
 .header-box {
     height: 750px;
     position: relative;
@@ -95,7 +99,7 @@ body {
 
 .hamburger {
     height: 50px;
-    width:100px;
+    width: 100px;
     position:absolute;
     z-index: 100;
     top: 90px;
@@ -250,6 +254,12 @@ input:checked + .slider {
     margin: 0 10%;
 }
 
+#owner {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
 /* Contact Form Styles */
 .label {
     margin-left: 10%;
@@ -345,10 +355,8 @@ input:checked + .slider {
 /* Game Area Styles */
 #game-img-outer, #game-area-outer {
     height: 605px;
-    width: 70%;
+    width: 95%;
     margin: auto;
-    border-radius: 25px;
-    border: 3px solid #000;
 }
 
 .game-img, #game-area {
@@ -404,16 +412,18 @@ li.slide {
     height: 120px;
     width: 120px;
     float: none;
+    margin: 5%;
 }
 
 #image-selector {
     float: left;
     width: 25%;
     text-align: center;
+    margin: 0 3%;
 }
 
 #image-select-title {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 150%;
     text-decoration: underline 3px #000;
 }
