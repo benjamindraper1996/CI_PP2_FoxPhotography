@@ -224,7 +224,7 @@ body {
     margin: auto;
 }
 
-#game-img, #game-area {
+.game-img, #game-area {
     margin: auto;
     height: 600px;
     width: 600px;
@@ -236,8 +236,10 @@ body {
     margin-bottom: 5%;
 }
 
-#game-img {
-    background-color: blue;
+#gameimage {
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
 }
 
 #game-area-outer {

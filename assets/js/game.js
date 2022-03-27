@@ -20,6 +20,7 @@ game.img = {
 game.empty = document.getElementById('emptyslide');
 game.win = Array.from(document.getElementsByClassName('slide'));
 game.gameAreaOuter = document.getElementById('game-area-outer');
+game.gameArea = document.getElementById('game-area');
 game.gameImg = document.getElementById('game-img');
 game.imgSelect = document.getElementsByClassName('img-select');
 
@@ -28,14 +29,14 @@ function setGameImage(folderpath) {
     if (folderpath == undefined) {
         var randomFolder = Math.floor((Math.random()*6));
         var folder = game.folderList[randomFolder]
-        game.gameImg.style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+"frame.jpg"+"')"
+        document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
 
         for (i=0;i<game.slides.length; i++) {
             var slideImage = i + 1;
             game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
         }
     } else {
-        game.gameImg.style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+"frame.jpg"+"')"
+        document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
 	    for(var i=0;i<game.slides.length;i++) {
             var slideImage = i + 1;
 		    game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
@@ -47,8 +48,8 @@ function setGameImage(folderpath) {
 function slideClick () {
     for (i=0; i<game.slides.length; i++) {
         game.slides[i].addEventListener('click', function() {
-            moveSlide(this); // Needs to be set
-            winGame(); // Needs to be set
+            moveSlide(this);
+            win();
         });
     }
 
@@ -58,7 +59,7 @@ function slideClick () {
             game.slides = Array.from(document.getElementsByClassName('slide'));
             setGameImage(this.name);
             setSlides(game);
-            game.gameAreaOuter.style.display = "none";
+            game.gameArea.style.display = "block";
         });
     }
 }
@@ -258,14 +259,13 @@ function checkBoard(board,winboard){
     for(i=0; i<board.length; i++){
         if(board[i]!=winboard[i]){
             return false
-        } else {
-            return true;
         }
     }
+return true;
 }
 
 function win() {
-    if(isEqual(game.slides,game.win)){
+    if(checkBoard(game.slides,game.win)){
         setTimeout(function(){ alert("You win!"); }, 500);
     }
 }
