@@ -17,7 +17,46 @@
     <header>
         <div>
             <!-- Spacer div / title background -->
-            <div class="header-box spacer"></div>
+            <div class="header-box spacer">
+                <ul class="menu">
+                    <li>
+                        <label class="switch">
+                            <i class="fas fa-adjust"></i>
+                            <div>
+                              <input type="checkbox" />
+                              <span class="slider round"></span>
+                            </div>
+                          </label>
+                    </li>
+                    <li><a class="menuItem" href="index.html">Home</a></li>
+                    <li><a class="menuItem" href="about.html">About</a></li>
+                    <li><a class="menuItem" href="contact.html">Contact</a></li>
+                    <li><a class="menuItem" href="game.html">Game</a></li>
+                    <div class="social-networks-menu">
+                    <ul id="social-networks-menu">
+                        <li class="social-networks-menu" id="instagram">
+                            <a href="https://instagram.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Instagram page (opens in a new tab)."><img
+                                    src="assets/images/instagram.png" alt="instagram logo"></a>
+                        </li>
+                        <li class="social-networks-menu">
+                            <a href="https://twitter.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Twitter page (opens in a new tab)."><img src="assets/images/twitter.png"
+                                    alt="twitter logo"></a>
+                        </li>
+                        <li class="social-networks-menu">
+                            <a href="https://facebook.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Facebook page (opens in a new tab)."><img src="assets/images/facebook.png"
+                                    alt="facebook logo"></a>
+                        </li>
+                    </ul>
+                    </div>
+                </ul>
+                <button class="hamburger">
+                  <i class="menuIcon material-icons">menu</i>
+                  <i class="closeIcon material-icons">close</i>
+                </button>
+            </div>
             <div id="contact-header">
                 <h1 class="header-text header-400">Fox Photography</h1>
                 <h2 class="header-text header-300">Match The Photo Game</h2>
@@ -104,5 +143,6 @@
     </footer>
     <!-- JS events file -->
     <script src="assets/js/game.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
