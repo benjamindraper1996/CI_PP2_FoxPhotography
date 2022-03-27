@@ -220,9 +220,15 @@ input:checked + .slider {
 }
 
 /* About Page Styles */
+#about-me-outer, #carousel {
+    display: block;
+    height: 500px;
+}
+
 #about-me {
     width: 95%;
     margin: 0 auto;
+    height: 500px;
 }
 
 #about-me-img {
@@ -258,10 +264,12 @@ input:checked + .slider {
 /*carousel*/
 
 .items {
-    display:block;
-    position:absolute;
+    margin: 50px auto 500px auto;
+    display: block;
+    position: absolute;
     left: 50%;
     user-select: none;
+    height: 500px;
   }
   
   .items .item {
@@ -512,6 +520,10 @@ li.slide {
     text-decoration: underline 3px #000;
 }
 
+.number {
+    display: none;
+}
+
 /* Footer Styles */
 
 #social-networks-list, .social-networks, .nav-footer {
@@ -521,7 +533,7 @@ li.slide {
 
 .nav-footer {
     font-size: 150%;
-    margin: 2%;
+    margin: 5% 2% 2% 2%;
 }
 
 #nav-footer-outer, #social-networks-list-outer {
