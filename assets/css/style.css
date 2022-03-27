@@ -12,7 +12,16 @@
     --headerfont-color: #5eff24;
     --slider-color: #5eff24;
     --background-color: #fff;
+}
 
+.dark-theme {
+    --menu-color: #000;
+    --font-color: #8920b0;
+    --button-color: #00a31e;
+    --buttonbgd-color: #0a60ff;
+    --headerfont-color:#0a60ff;
+    --slider-color: #00a31e;
+    --background-color: #000;
 }
 
 body {
