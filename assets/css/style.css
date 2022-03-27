@@ -15,7 +15,7 @@
     --underline-color: #ff00b3;
     --secondary-color: #1fb8ff;
     --third-color: #ff00b3;
-    --hamburger-light-theme: assets/images/HamburgerLightTheme.png;
+    --hamburgericon: url(assets/images/Hamburgerblack.png);
 }
 
 .dark-theme {
@@ -29,7 +29,7 @@
     --underline-color: #8920b0;
     --secondary-color: #0a60ff;
     --third-color: #8920b0;
-    --hamburger-light-theme: assets/images/HamburgerDarkTheme.png;
+    --hamburgericon: url(assets/images/Hamburgerwhite.png);
 }
 
 body {
@@ -109,13 +109,8 @@ body {
     cursor: pointer;
 }
 
-.closeIcon {
-    display: none;
-  }
-
-.menuIcon, .closeIcon{
-    font-size: large;
-    font-style: normal;
+.menuIcon {
+    width: 50px;
 }
 
 .menu {

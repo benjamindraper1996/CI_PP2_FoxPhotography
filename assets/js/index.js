@@ -1,4 +1,4 @@
-var delay=1000
+var delay=5000
 var curindex=0
 
 var blackwhite = new Array()
@@ -36,6 +36,11 @@ var pinkBench = new Array()
 	pinkBench[1] = "assets/images/pink-bench/2.jpg";
 	pinkBench[2] = "assets/images/pink-bench/3.jpg";
 
+	var arcade = new Array()
+	arcade[0] = "assets/images/arcade/1.jpg";
+	arcade[1] = "assets/images/arcade/2.jpg";
+	arcade[2] = "assets/images/arcade/3.jpg";
+
 var preload = new Array
 
 for (n=0;n<blackwhite.length;n++)
@@ -44,6 +49,7 @@ for (n=0;n<pinkWindows.length;n++)
 for (n=0;n<graffitiHat.length;n++)
 for (n=0;n<greenscreen.length;n++)
 for (n=0;n<orangeBench.length;n++)
+for (n=0;n<arcade.length;n++)
 for (n=0;n<pinkBench.length;n++) {
 	preload[n]=new Image()
 	preload[n].src=blackwhite[n]
@@ -52,6 +58,7 @@ for (n=0;n<pinkBench.length;n++) {
 	preload[n].src=graffitiHat[n]
 	preload[n].src=greenscreen[n]
 	preload[n].src=orangeBench[n]
+	preload[n].src=arcade[n]
 	preload[n].src=pinkBench[n]
 }
 
@@ -68,6 +75,7 @@ function rotateimage() {
 		document.images.graffitiHat.src=graffitiHat[curindex]
 		document.images.greenscreen.src=greenscreen[curindex]
 		document.images.orangeBench.src=orangeBench[curindex]
+		document.images.arcade.src=arcade[curindex]
 		document.images.pinkBench.src=pinkBench[curindex]
 }
 
