@@ -13,6 +13,8 @@
     --slider-color: #5eff24;
     --background-color: #fff;
     --underline-color: #ff00b3;
+    --secondary-color: #1fb8ff;
+    --third-color: #ff00b3;
 }
 
 .dark-theme {
@@ -24,6 +26,8 @@
     --slider-color: #00a31e;
     --background-color: #000;
     --underline-color: #8920b0;
+    --secondary-color: #0a60ff;
+    --third-color: #8920b0;
 }
 
 body {
@@ -218,16 +222,13 @@ input:checked + .slider {
 
 /* About Page Styles */
 #about-me {
-    margin: 5% 0;
-    background-color: #1fb8ff;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
 #about-me-img {
     height: 500px;
     width: 500px;
-    background-color: blue;
     float: left;
     margin-left: 2.5%;
 }
@@ -235,7 +236,7 @@ input:checked + .slider {
 #about-me-text {
     height: 500px;
     max-width: 60%;
-    background-color: red;
+    background-color: var(--secondary-color);
     float: right;
     display: flex;
     justify-content: center;
@@ -255,14 +256,14 @@ input:checked + .slider {
 }
 
 #form-outer {
-    margin: 0 0 0 15%;
-    width: 34%;
+    margin: 0 0 0 5%;
+    width: 43%;
     float: left;
-    background-color: aqua;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 750px;
     border-radius: 25px;
     border: 3px solid #000;
 }
@@ -282,16 +283,17 @@ input:checked + .slider {
     width: 30%;
     margin: 10px 35%;
     border: 3px solid #000;
+    background-color: var(--third-color);
 }
 
 /* Address and Location Styles */
 
 #location {
     float: right;
-    width: 34%;
-    margin: 0 15% 0 0;
-    background-color: green;
-    height: 700px;
+    width: 43%;
+    margin: 0 5% 0 0;
+    background-color: var(--secondary-color);
+    height: 750px;
     border-radius: 25px;
     border: 3px solid #000;
 }
@@ -310,7 +312,7 @@ input:checked + .slider {
 
 #address {
     margin: 5%;
-    background-color: bisque;
+    background-color: var(--third-color);
 }
 
 #map {
@@ -336,26 +338,29 @@ input:checked + .slider {
 
 .gmap_canvas iframe {
     height:inherit;
-    width: 100%;    
+    width: 100%;
     border-radius: 25px;
 }
 
 /* Game Area Styles */
 #game-img-outer, #game-area-outer {
-    height: 600px;
+    height: 605px;
     width: 70%;
     margin: auto;
+    border-radius: 25px;
+    border: 3px solid #000;
 }
 
 .game-img, #game-area {
     margin: auto;
     height: 600px;
     width: 600px;
+    border: 3px solid #000;
 
 }
 
 #game-img-outer {
-    background-color: aqua;
+    background-color: var(--third-color);
     margin-bottom: 5%;
 }
 
@@ -370,7 +375,7 @@ input:checked + .slider {
 	background-repeat: no-repeat;
 	background-position: center;
 	transition: 0.5s;
-    background-color: burlywood;
+    background-color: var(--secondary-color);
 }
 
 
@@ -388,7 +393,6 @@ li.slide {
 	transition: 0.3s;
 	cursor: pointer;
 	background-size: contain;
-    background-color: #5eff24;
 }
 
 #blank {
