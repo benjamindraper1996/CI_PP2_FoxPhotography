@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Poiret+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,9 @@
     --underline-color: #ff00b3;
     --secondary-color: #1fb8ff;
     --third-color: #ff00b3;
-    --hamburgericon: url(assets/images/Hamburgerblack.png);
     --footercolor: #000;
+    --headertext: 'Josefin Slab', 'sans-serif';
+    --bodytext: 'Poiret One', 'sans-serif';
 }
 
 .dark-theme {
@@ -24,13 +27,12 @@
     --font-color: #8920b0;
     --button-color: #00a31e;
     --buttonbgd-color: #0a60ff;
-    --headerfont-color:#0a60ff;
+    --headerfont-color:#00a31e;
     --slider-color: #00a31e;
     --background-color: #000;
     --underline-color: #8920b0;
     --secondary-color: #0a60ff;
     --third-color: #8920b0;
-    --hamburgericon: url(assets/images/Hamburgerwhite.png);
     --footercolor: #fff;
 }
 
@@ -39,10 +41,10 @@ body {
     position: relative;
     height: 100%;
     background-color: var(--background-color);
+    font-family: var(--bodytext);
 }
 
 /* Background Style */
-
 .spacer {
     height: 200px;
 }
@@ -63,6 +65,7 @@ body {
     text-align: center;
     color: var(--headerfont-color);
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    font-family: var(--headertext);
 }
 
 .header-text a:hover {
@@ -91,6 +94,7 @@ body {
 .header-box {
     height: 750px;
     position: relative;
+    margin-top: 50px;
 }
 
 #hero {
@@ -104,11 +108,12 @@ body {
     width: 100px;
     position:absolute;
     z-index: 100;
-    top: 90px;
+    top: 20px;
     right: 20px;
     border-radius: 100px;
     background: var(--button-color);
     cursor: pointer;
+    display: inline;
 }
 
 .menuIcon {
@@ -149,9 +154,11 @@ body {
 .switch {
     width: 200px;
     height: 100px;
+    top: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-top: 5px;
   }
   
 .switch div {
@@ -360,6 +367,7 @@ input:checked + .slider {
 /* Contact Form Styles */
 .label {
     margin-left: 10%;
+    font-size: 110%;
 }
 
 #form-outer {

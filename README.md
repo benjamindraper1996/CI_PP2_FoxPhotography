@@ -106,7 +106,10 @@ For the colour scheme the website owner has chosen to implement a dark and light
 ![Light Mode Theme](documentation/features/colour-palette-light.png)
 
 ### Fonts
- 
+ The business owner preferred the use of 'Josefin Slab' font as the main, with a backup of sans-serif across the website for the title and headers. This is used to maintain a Consistent and professional look with an easily readable format. 
+<br>
+For the Secondary font for the body text the owners decided to use 'Poiret One' with a backup of sans-serif, this will help to maintain the consistant theme across the website. 
+
 
 ### Structure
 
