@@ -538,10 +538,15 @@ li.slide {
 
 #social-networks-list {
     height: 80px;
+    width: 100%;
 }
 
 .social-networks img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+.social-networks {
+    margin: 0 1%;
 }
 
