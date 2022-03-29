@@ -11,7 +11,7 @@
     --font-color: #ff00b3;
     --button-color: #1fb8ff;
     --buttonbgd-color: #1fb8ff;
-    --headerfont-color: #5eff24;
+    --headerfont-color: #ff00b3;
     --slider-color: #5eff24;
     --background-color: #fff;
     --underline-color: #ff00b3;
@@ -27,7 +27,7 @@
     --font-color: #8920b0;
     --button-color: #00a31e;
     --buttonbgd-color: #0a60ff;
-    --headerfont-color:#00a31e;
+    --headerfont-color:#0a60ff;
     --slider-color: #00a31e;
     --background-color: #000;
     --underline-color: #8920b0;
@@ -80,15 +80,9 @@ body {
     font-size: 300%;
 }
 
-.header-200 {
-    font-size: 200%;
-}
-
-#home-header, #about-header, #contact-header {
-    position: absolute;
-    top: 7.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#home-header, #about-header, #contact-header, #game-header {
+    position: relative;
+    transform: translate(0, -300%);
 }
 
 .header-box {
@@ -106,14 +100,14 @@ body {
 .hamburger {
     height: 50px;
     width: 100px;
-    position:absolute;
+    position:fixed;
     z-index: 100;
-    top: 20px;
-    right: 20px;
-    border-radius: 100px;
+    top: 65px;
+    right: 3%;
     background: var(--button-color);
     cursor: pointer;
     display: inline;
+
 }
 
 .menuIcon {
@@ -157,8 +151,7 @@ body {
     top: 20px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 5px;
+    margin-left: 3%;
   }
   
 .switch div {
@@ -167,8 +160,6 @@ body {
     background: var(--buttonbgd-color);
     width: 100px;
     height: 50px;
-    border-radius: 100px;
-    padding: 0 5px;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -180,7 +171,6 @@ body {
 .slider {
     background-color: var(--slider-color);
     transition: 0.4s;
-    border-radius: 100px;
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -188,7 +178,7 @@ body {
 }
   
 input:checked + .slider {
-    transform: translateX(40px);
+    transform: translateX(50px);
 }
 
 .social-networks-menu{
