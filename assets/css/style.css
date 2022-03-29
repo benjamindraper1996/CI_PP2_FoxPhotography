@@ -16,6 +16,7 @@
     --secondary-color: #1fb8ff;
     --third-color: #ff00b3;
     --hamburgericon: url(assets/images/Hamburgerblack.png);
+    --footercolor: #000;
 }
 
 .dark-theme {
@@ -30,6 +31,7 @@
     --secondary-color: #0a60ff;
     --third-color: #8920b0;
     --hamburgericon: url(assets/images/Hamburgerwhite.png);
+    --footercolor: #fff;
 }
 
 body {
@@ -207,6 +209,11 @@ input:checked + .slider {
 
 #imgpairs {
     width: 100%;
+    margin-bottom: 5%;
+}
+
+.my-work {
+    margin-bottom: 5%;
 }
 
 .onleft img, .onright img {
@@ -529,11 +536,18 @@ li.slide {
 
 .nav-footer {
     font-size: 150%;
-    margin: 5% 2% 2% 2%;
+    margin: 1% 2% 2% 2%;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    border-bottom: 3px solid var(--underline-color);
+    color: var(--secondary-color);
 }
 
 #nav-footer-outer, #social-networks-list-outer {
     text-align: center;
+    background-color: var(--footercolor);
 }
 
 #social-networks-list {
