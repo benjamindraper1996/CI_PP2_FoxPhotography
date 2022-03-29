@@ -201,6 +201,7 @@ input:checked + .slider {
     width: 45%;
     height: 1000px;
     display: inline;
+    
 }
 
 .onright img{
@@ -220,6 +221,7 @@ input:checked + .slider {
     height: inherit;
     width: inherit;
     object-fit: cover;
+    box-shadow: 5px 5px 50px 12px #000;
 }
 
 /* About Page Styles */
