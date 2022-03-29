@@ -195,28 +195,24 @@ input:checked + .slider {
 }
 
 /* Home Page Gallery Styles */
-.imgsquare, .imgrectangle {
-    width: 500px;
-    height: 500px;
-    display: inline-block;
+.imgsquare {
+    width: 45%;
+    height: 1000px;
+    display: inline;
 }
 
-.imgrectangle {
-    width: 750px;
-}
-
-.onright {
+.onright img{
     float: right;
+}
+
+#imgpairs {
+    width: 100%;
 }
 
 .onleft img, .onright img {
     height: inherit;
     width: inherit;
     object-fit: cover;
-}
-
-#imgpairs {
-    padding: 5%;
 }
 
 /* About Page Styles */
