@@ -202,7 +202,6 @@ input:checked + .slider {
     width: 45%;
     height: 1000px;
     display: inline;
-    
 }
 
 .onright img{
@@ -386,7 +385,6 @@ input:checked + .slider {
     justify-content: center;
     align-items: center;
     height: 750px;
-    border-radius: 25px;
     border: 3px solid #000;
 }
 
@@ -416,7 +414,6 @@ input:checked + .slider {
     margin: 0 5% 0 0;
     background-color: var(--secondary-color);
     height: 750px;
-    border-radius: 25px;
     border: 3px solid #000;
 }
 
@@ -427,7 +424,6 @@ input:checked + .slider {
     height: 300px;
     font-size: 150%;
     text-align: center;
-    border-radius: 25px;
     border: 3px solid #000;
     margin: 5%;
 }
@@ -461,8 +457,54 @@ input:checked + .slider {
 .gmap_canvas iframe {
     height:inherit;
     width: 100%;
-    border-radius: 25px;
 }
+
+/* Contact Page Image Styles */
+
+#contact-img {
+    display: inline-block;
+    height: 500px;
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+#contact-img-div {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-images {
+    display: inline-block;
+    width: 33%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.contact-images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*
+
+.contact-images {
+    width: 20%;
+    height: inherit;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contact-images img {
+    height: inherit;
+    width: 100%;
+    object-fit: contain;
+}
+
+#imgright {
+    float: right;
+} */
+
 
 /* Game Area Styles */
 #game-img-outer, #game-area-outer {
@@ -476,7 +518,6 @@ input:checked + .slider {
     height: 600px;
     width: 600px;
     border: 3px solid #000;
-
 }
 
 #game-img-outer {
