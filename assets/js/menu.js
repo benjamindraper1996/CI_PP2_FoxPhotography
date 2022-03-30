@@ -11,7 +11,7 @@ const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
 /**
- * Toggles between showing the dropdown navigation menu and closing it again.
+ * toggleMenu switches between showing the dropdown navigation menu and closing it again.
  */
 function toggleMenu() {
 if (menu.classList.contains("showMenu")) {
