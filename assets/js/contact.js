@@ -4,7 +4,7 @@
  * @param contactForm [The contact form object]
  */
  function sendEmail(contactForm) {
-    emailjs.init("user_gpcsDg9YUsB9BwQGin6JI");
+    emailjs.init("user_2FuQau4zwU9NqnwDl");
     emailjs.send("Outlook", "Fox Photography", {
         "from-name": contactForm.name.value,
         "from-email": contactForm.email.value,
