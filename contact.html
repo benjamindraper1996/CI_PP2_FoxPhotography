@@ -62,7 +62,7 @@
 <section id="contact">
     <!-- Contact from -->
     <div id="form-outer">
-        <form action="https://formdump.codeinstitute.net/">
+        <form id="emailform" onsubmit="return sendEmail(this);">
             <label class="label" for="name">Name</label>
             <input id="name" type="text" name="name" class="input-box" required>
             <label class="label" for="email">Email Address</label>
