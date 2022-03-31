@@ -3,7 +3,7 @@
  * within the rotating the home page gallery.
  */
 
-var delay=5000 //Time in milliseconds the images will change.
+var delay=1000 //Time in milliseconds the images will change.
 var curindex=0
 
 //Image Array for for 'black-white' folder.
@@ -80,20 +80,32 @@ preload[n].src=pinkBench[n]
  * rotateimage changes the images in the home page gallery at random intervals.
  */
 function rotateimage() {
+//Randomizes which picture from within each array we are using.
 if (curindex==(tempindex=Math.floor(Math.random()*3))){
 	curindex=curindex==0? 1 : curindex-1
 	}
 	else
 	curindex=tempindex
 
-	document.images.blackWhite.src=blackwhite[curindex]
-	document.images.graffitiBlueHair.src=graffitiBlueHair[curindex]
-	document.images.pinkWindows.src=pinkWindows[curindex]
-	document.images.graffitiHat.src=graffitiHat[curindex]
-	document.images.greenscreen.src=greenscreen[curindex]
-	document.images.orangeBench.src=orangeBench[curindex]
-	document.images.arcade.src=arcade[curindex]
-	document.images.pinkBench.src=pinkBench[curindex]
+	//Randomizes which image changes each time the function runs.
+	if (Math.floor(Math.random()*8) == 0) {
+		document.images.blackWhite.src=blackwhite[curindex]
+	} else if (Math.floor(Math.random()*8) == 1) {
+		document.images.graffitiBlueHair.src=graffitiBlueHair[curindex]
+	} else if (Math.floor(Math.random()*8) == 2) {
+		document.images.pinkWindows.src=pinkWindows[curindex]
+	} else if (Math.floor(Math.random()*8) == 3) {
+		document.images.orangeBench.src=orangeBench[curindex]
+	} else if (Math.floor(Math.random()*8) == 4) {
+		document.images.graffitiHat.src=graffitiHat[curindex]
+	} else if (Math.floor(Math.random()*8) == 5) {
+		document.images.greenscreen.src=greenscreen[curindex]
+	} else if (Math.floor(Math.random()*8) == 6) {
+		document.images.arcade.src=arcade[curindex]
+	} else if (Math.floor(Math.random()*8) == 7) {
+		document.images.pinkBench.src=pinkBench[curindex]
+	}
+
 }
 
 //Calls function at set intervals.
