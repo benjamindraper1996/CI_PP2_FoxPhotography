@@ -1,10 +1,13 @@
+/**
+ * The game.js file is used by the game.html to control the slider puzzle game.
+ */
 var game = new Object();
-/* Defines the game board */
+// Defines the game board
 game.slides = Array.from(document.getElementsByClassName('slide'));
-/* Defines the game folders */
+// Defines the game folders
 game.folderList = ["bluelight","graffitiHat","graffitiWall","greenscreen","pinkBench","pinkWindows"];
 game.gameStarted = false;
-/* Sets up the game board */
+// Sets up the game board
 game.img = {
 1: "1.jpg",
 2: "2.jpg",
@@ -17,6 +20,7 @@ game.img = {
 9: "",
 };
 
+//Gets variables from gamt.html to declare variables
 game.empty = document.getElementById('emptyslide');
 game.win = Array.from(document.getElementsByClassName('slide'));
 game.gameAreaOuter = document.getElementById('game-area-outer');
@@ -24,7 +28,10 @@ game.gameArea = document.getElementById('game-area');
 game.gameImg = document.getElementById('game-img');
 game.imgSelect = document.getElementsByClassName('img-select');
 
-/* function to add images to the slides */
+/**
+ * setGameImage sets the game reference image above the slider puzzle.
+ * @param folderpath [The path of the folder to pick the updated picture from.]
+ */
 function setGameImage(folderpath) {
 if (folderpath == undefined) {
     var randomFolder = Math.floor((Math.random()*6));
@@ -44,7 +51,9 @@ if (folderpath == undefined) {
     }
 }
 
-/* Adds the event listener for each slide */
+/**
+ * slideClick adds the listners for the image selectors and slider tiles then calls the function to move the slide.
+ */
 function slideClick () {
     for (i=0; i<game.slides.length; i++) {
         game.slides[i].addEventListener('click', function() {
@@ -53,7 +62,7 @@ function slideClick () {
     });
 }
 
-/* Resets and shuffles the game board */
+// Resets and shuffles the game board
 for (i=0; i<game.imgSelect.length; i++) {
     game.imgSelect[i].addEventListener('click', function(){
         game.slides = Array.from(document.getElementsByClassName('slide'));
@@ -64,7 +73,11 @@ for (i=0; i<game.imgSelect.length; i++) {
 }
 }
 
-/* randomizes the slides */
+/**
+ * shuffleSlides randomly shuffles the slides on the board at the start of a new game.
+ * @param array [Array numbering the slides positioning]
+ * @returns 
+ */
 function shuffleSlides(array) {
 var a = Math.floor(((Math.random()*150)+150));
 var bottomRight = [-3,-1];
@@ -116,7 +129,9 @@ for(i=0; i<a; i++) {
 return array
 }
 
-/* Function to set slides */
+/**
+ * setSlides sets the slides into posistion.
+ */
 function setSlides() {
 var x = game.slides;
 x = shuffleSlides(x);
@@ -141,7 +156,10 @@ for (i=0; i<3; i++) {
 }
 }
 
-/* function linking to other move functions */
+/**
+ * moveSlide moves the slide clicked on in the given direction.
+ * @param slide [The slide to be moved]
+ */
 function moveSlide(slide){
 
 if (isRight(slide)){
@@ -155,7 +173,11 @@ if (isRight(slide)){
 }
 }
 
-/* Is slide right function */
+/**
+ * isRight checks the square to the right for the blank square.
+ * @param slide [The slide to be moved]
+ * @returns 
+ */
 function isRight(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position + 1;
@@ -164,7 +186,10 @@ if(Object.is(game.slides[blank_position],game.empty) && position!=5 && position!
 }
 }
 
-/* Move slide right function */
+/**
+ * moveRight moves the clicked on slide to the right.
+ * @param slide [The slide to be moved]
+ */
 function moveRight(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
@@ -180,7 +205,11 @@ game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty; 
 }
 
-/* Is slide left function */
+/**
+ * isLeft checks the square to the left for the blank square.
+ * @param slide [The slide to be moved]
+ * @returns 
+ */
 function isLeft(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position - 1;
@@ -189,7 +218,10 @@ if(Object.is(game.slides[blank_position],game.empty) &&  position!=0 && position
 }
 }
 
-/* Move slide left function */
+/**
+ * moveLeft moves the clicked on slide to the left.
+ * @param slide [The slide to be moved]
+ */
 function moveLeft(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
@@ -205,7 +237,11 @@ game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
 
-/* Is slide top function */
+/**
+ * isTop checks the square to the top for the blank square.
+ * @param slide [The slide to be moved]
+ * @returns 
+ */
 function isTop(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position-3;
@@ -214,7 +250,10 @@ if (Object.is(game.slides[blank_position],game.empty)) {
 }
 }
 
-/* Move slide top function */
+/**
+ * moveTop moves the clicked on slide to the top.
+ * @param slide [The slide to be moved]
+ */
 function moveTop(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
@@ -230,7 +269,11 @@ game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
 
-/* Is slide down function */
+/**
+ * isDown checks the square to the down for the blank square.
+ * @param slide [The slide to be moved]
+ * @returns 
+ */
 function isDown(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position+3;
@@ -239,7 +282,10 @@ if (Object.is(game.slides[blank_position],game.empty)) {
 }
 }
 
-/* Move slide down function */
+/**
+ * moveDown moves the clicked on slide to the down.
+ * @param slide [The slide to be moved]
+ */
 function moveDown(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
@@ -255,6 +301,12 @@ game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
 
+/**
+ * checkBoard checks the board against the reference image.
+ * @param board [The current state of the game board]
+ * @param winboard [The reference image board]
+ * @returns 
+ */
 function checkBoard(board,winboard){
 for(i=0; i<board.length; i++){
     if(board[i]!=winboard[i]){
@@ -264,6 +316,9 @@ for(i=0; i<board.length; i++){
 return true;
 }
 
+/**
+ * win displays an alert when the user has won the game.
+ */
 function win() {
 if(checkBoard(game.slides,game.win)){
     setTimeout(function(){ alert("You win!"); }, 500);
