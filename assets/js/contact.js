@@ -4,19 +4,14 @@
  * @param contactForm [The contact form object]
  */
 function sendMail(contactForm) {
-    emailjs.init("user_2FuQau4zwU9NqnwDl");
-    emailjs.sendform('service_ghnjauc', 'FoxPhotography', {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.email.value,
-        "message": contactForm.messageBox.value,
+    var tempParams = {
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        message: document.getElementById("messageBox").value,
+    };
+    //Sends the email using the specific service ID, Email template and parameters above.
+    emailjs.send('service_ghnjauc', 'template_m5hw7tk', tempParams)
+    .then(function(response){
+        console.log("Email Sent", response.status);
     })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response),
-            alert ("Your message has been sent.");
-        },
-        function(error) {
-            console.log("FAILED", error);
-        });
-        return false;
 }
