@@ -396,13 +396,13 @@ height: 750px;
 border: 3px solid #000;
 }
 
-.input-box, #message-box {
+.input-box, #messageBox {
 width: 75%;
 margin: 0 10%;
 border: 3px solid #000;
 }
 
-#message-box {
+#messageBox {
 height: 500px;
 resize: none;
 }
