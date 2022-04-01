@@ -37,17 +37,17 @@ if (folderpath == undefined) {
     }
 } else {
     document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
-    for(var i=0;i<game.slides.length;i++) {
-        var slideImage = i + 1;
-        game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
+        for(var i=0;i<game.slides.length;i++) {
+            var slideImage = i + 1;
+            game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
+        }
     }
-}
 }
 
 /* Adds the event listener for each slide */
 function slideClick () {
-for (i=0; i<game.slides.length; i++) {
-    game.slides[i].addEventListener('click', function() {
+    for (i=0; i<game.slides.length; i++) {
+        game.slides[i].addEventListener('click', function() {
         moveSlide(this);
         win();
     });

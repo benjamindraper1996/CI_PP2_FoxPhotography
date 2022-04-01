@@ -495,7 +495,7 @@ object-fit: cover;
 }
 
 /* Game Area Styles */
-#game-img-outer, #game-area-outer {
+.game-img-outer, #game-area-outer {
 height: 605px;
 width: 95%;
 margin: auto;
@@ -508,7 +508,7 @@ width: 600px;
 border: 3px solid #000;
 }
 
-#game-img-outer {
+.game-img-outer {
 background-color: var(--third-color);
 margin-bottom: 5%;
 }
@@ -518,6 +518,10 @@ margin-bottom: 5%;
 height: inherit;
 width: inherit;
 object-fit: contain;
+}
+
+.game-img, .image-selector {
+    display: inline-block;
 }
 
 #game-area-outer {
@@ -555,20 +559,27 @@ height: 120px;
 width: 120px;
 float: none;
 margin: 5%;
+padding-top: 5%;
 }
 
 /* Image Selector area */
-#image-selector {
+.image-selector {
 float: left;
-width: 25%;
+width: 27%;
 text-align: center;
-margin: 0 3%;
+margin: 0 2.5%;
+}
+
+#imagesright {
+    float: right;
 }
 
 #image-select-title {
 margin-top: 10%;
-font-size: 150%;
+font-size: 300%;
 text-decoration: underline 3px #000;
+text-align: center;
+margin-bottom: 30px;
 }
 
 .number {
