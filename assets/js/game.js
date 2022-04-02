@@ -39,15 +39,15 @@ var folder = game.folderList[randomFolder]
 document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
 
 for (i=0;i<game.slides.length; i++) {
-    var slideImage = i + 1;
-    game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
+var slideImage = i + 1;
+game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
 }
 } else {
 document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
-    for(var i=0;i<game.slides.length;i++) {
-        var slideImage = i + 1;
-        game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
-    }
+for(var i=0;i<game.slides.length;i++) {
+    var slideImage = i + 1;
+    game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
+}
 }
 }
 
@@ -56,19 +56,19 @@ document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+
  */
 function slideClick () {
 for (i=0; i<game.slides.length; i++) {
-    game.slides[i].addEventListener('click', function() {
-    moveSlide(this);
-    win();
+game.slides[i].addEventListener('click', function() {
+moveSlide(this);
+win();
 });
 }
 
 // Resets and shuffles the game board
 for (i=0; i<game.imgSelect.length; i++) {
 game.imgSelect[i].addEventListener('click', function(){
-    game.slides = Array.from(document.getElementsByClassName('slide'));
-    setGameImage(this.name);
-    setSlides(game);
-    game.gameArea.style.display = "block";
+game.slides = Array.from(document.getElementsByClassName('slide'));
+setGameImage(this.name);
+setSlides(game);
+game.gameArea.style.display = "block";
 });
 }
 }
@@ -95,31 +95,31 @@ for(i=0; i<a; i++) {
 var position = Array.prototype.indexOf.call(array,game.empty);
 
 if(position == 0){
-    moves = topLeft;
+moves = topLeft;
 }
 if (position == 1) {
-    moves = middleTop;
+moves = middleTop;
 }
 if(position == 2){
-    moves = topRight;
+moves = topRight;
 }
 if(position == 3){
-    moves = middleLeft;
+moves = middleLeft;
 }
 if(position == 4){
-    moves = middle;
+moves = middle;
 }
 if(position == 5){
-    moves = middleRight;
+moves = middleRight;
 }
 if (position == 6) {
-    moves = bottomLeft;
+moves = bottomLeft;
 }
 if (position == 7) {
-    moves = middleBottom
+moves = middleBottom
 }
 if (position == 8) {
-    moves = bottomRight;
+moves = bottomRight;
 }
 
 move = moves[Math.floor(Math.random()*moves.length)];
@@ -310,7 +310,7 @@ game.slides[position] = game.empty;
 function checkBoard(board,winboard){
 for(i=0; i<board.length; i++){
 if(board[i]!=winboard[i]){
-    return false
+return false
 }
 }
 return true;
@@ -332,65 +332,23 @@ setSlides();
 }(game));
 
 
-
+/**
+ * Controls the in game timer.
+ */
 window.addEventListener("DOMContentLoaded", stopwatch);
 
+/**
+ * sets up, starts, stops and resets the timer.
+ */
 function stopwatch() {
 
-    var stopTime = 0;
-    var startTime = 0;
-
-    var time = document.getElementById("time");
-
-
-    //Set an interval to update the clock
-    var intervalID = setInterval(function() {
-        var elapsedTime = Date.now() - startTime;
-        time.textContent = formatTime(elapsedTime);
-        }, 100)
-
-    var start = document.getElementsByClassName("slide").addEventListener("click", function() {
-        if (intervalID === 0) {
-            startTime = Date.now();
-            intervalID = 1
-            return;
-        }
-    })
-
-    var stop = win().addEventListener(win(), function() {
-        if (intervalID === 1) {
-            stopTime = Date.now();
-            intervalID = 0
-            clearInterval(intervalID);
-            return;
-        }
-    })
-    var reset = document.getElementById("image-select").addEventListener("click", function() {
-        startTime = intervalID ? Date.now() : 0;
-        stopTime = 0;
-        clock.textContent = "00:00";
-    })    
-    
-}
-
-/**
- * Sets up and runs the Timer For the game.
- 
-window.addEventListener("DOMContentLoaded", setupStopwatch);
-
-// Sets up the stopwatch
-function setupStopwatch() {
-
-var time = document.getElementById("time");
-var start = document.getElementsByClassName("slide")
-var stop = win(true)
-var reset = document.getElementById("image-select")
 var stopTime = 0;
 var startTime = 0;
 var intervalID = 0;
+var time = document.getElementById("time");
 
-//Starts the clock
-start.addEventListener("click", function() {
+//Starts the timer when the first slide is clicked.
+var start = document.getElementsByClassName("slide").addEventListener("click", function() {
     if (intervalID === 0) {
         startTime = Date.now();
         intervalID = 1
@@ -398,8 +356,8 @@ start.addEventListener("click", function() {
     }
 })
 
-//Stops the clock
-stop.addEventListener("click", function() {
+//Stops the timer when the game is won.
+var stop = win().addEventListener(win(), function() {
     if (intervalID === 1) {
         stopTime = Date.now();
         intervalID = 0
@@ -408,28 +366,20 @@ stop.addEventListener("click", function() {
     }
 })
 
+// Resets the timer when a new image is chosen.
+var reset = document.getElementById("image-select").addEventListener("click", function() {
+    startTime = intervalID ? Date.now() : 0;
+    stopTime = 0;
+    clock.textContent = "00:00";
+})
+
 //Set an interval to update the clock
-intervalID = setInterval(function() {
+var intervalID = setInterval(function() {
     var elapsedTime = Date.now() - startTime;
     time.textContent = formatTime(elapsedTime);
     }, 100)
 
-//Resets the clock when a new image is clicked
-reset.addEventListener("click", function() {
-    if (intervalID === 1) {
-        stopTime = Date.now();
-        intervalID = 0
-        clearInterval(intervalID);
-        time.textContent = "00:00";
-        return;
-    } else {
-        intervalID = 0
-        clearInterval(intervalID);
-        time.textContent = "00:00";
-    }
-})
 }
-*/
 
 // Helper function that takes a UTC timestamp and returns a formatted time string
 function formatTime(timestamp) {
