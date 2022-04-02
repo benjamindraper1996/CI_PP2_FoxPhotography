@@ -34,42 +34,42 @@ game.imgSelect = document.getElementsByClassName('img-select');
  */
 function setGameImage(folderpath) {
 if (folderpath == undefined) {
-    var randomFolder = Math.floor((Math.random()*6));
-    var folder = game.folderList[randomFolder]
-    document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
+var randomFolder = Math.floor((Math.random()*6));
+var folder = game.folderList[randomFolder]
+document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
 
-    for (i=0;i<game.slides.length; i++) {
-        var slideImage = i + 1;
-        game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
-    }
+for (i=0;i<game.slides.length; i++) {
+    var slideImage = i + 1;
+    game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
+}
 } else {
-    document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
-        for(var i=0;i<game.slides.length;i++) {
-            var slideImage = i + 1;
-            game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
-        }
+document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
+    for(var i=0;i<game.slides.length;i++) {
+        var slideImage = i + 1;
+        game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
     }
+}
 }
 
 /**
  * slideClick adds the listners for the image selectors and slider tiles then calls the function to move the slide.
  */
 function slideClick () {
-    for (i=0; i<game.slides.length; i++) {
-        game.slides[i].addEventListener('click', function() {
-        moveSlide(this);
-        win();
-    });
+for (i=0; i<game.slides.length; i++) {
+    game.slides[i].addEventListener('click', function() {
+    moveSlide(this);
+    win();
+});
 }
 
 // Resets and shuffles the game board
 for (i=0; i<game.imgSelect.length; i++) {
-    game.imgSelect[i].addEventListener('click', function(){
-        game.slides = Array.from(document.getElementsByClassName('slide'));
-        setGameImage(this.name);
-        setSlides(game);
-        game.gameArea.style.display = "block";
-    });
+game.imgSelect[i].addEventListener('click', function(){
+    game.slides = Array.from(document.getElementsByClassName('slide'));
+    setGameImage(this.name);
+    setSlides(game);
+    game.gameArea.style.display = "block";
+});
 }
 }
 
@@ -92,39 +92,39 @@ var middle = [1,3,-3,-1];
 var moves;
 
 for(i=0; i<a; i++) {				
-    var position = Array.prototype.indexOf.call(array,game.empty);
+var position = Array.prototype.indexOf.call(array,game.empty);
 
-    if(position == 0){
-        moves = topLeft;
-    }
-    if (position == 1) {
-        moves = middleTop;
-    }
-    if(position == 2){
-        moves = topRight;
-    }
-    if(position == 3){
-        moves = middleLeft;
-    }
-    if(position == 4){
-        moves = middle;
-    }
-    if(position == 5){
-        moves = middleRight;
-    }
-    if (position == 6) {
-        moves = bottomLeft;
-    }
-    if (position == 7) {
-        moves = middleBottom
-    }
-    if (position == 8) {
-        moves = bottomRight;
-    }
+if(position == 0){
+    moves = topLeft;
+}
+if (position == 1) {
+    moves = middleTop;
+}
+if(position == 2){
+    moves = topRight;
+}
+if(position == 3){
+    moves = middleLeft;
+}
+if(position == 4){
+    moves = middle;
+}
+if(position == 5){
+    moves = middleRight;
+}
+if (position == 6) {
+    moves = bottomLeft;
+}
+if (position == 7) {
+    moves = middleBottom
+}
+if (position == 8) {
+    moves = bottomRight;
+}
 
-    move = moves[Math.floor(Math.random()*moves.length)];
-    array[position] = array[position+move];
-    array[position+move] = game.empty;
+move = moves[Math.floor(Math.random()*moves.length)];
+array[position] = array[position+move];
+array[position+move] = game.empty;
 }
 return array
 }
@@ -138,21 +138,21 @@ x = shuffleSlides(x);
 var set = [[x[0],x[1],x[2]],[x[3],x[4],x[5]],[x[6],x[7],x[8]]];
 
 for (i=0; i<3; i++) {
-    position = (Array.prototype.indexOf.call(set[0],set[0][i]))*200
-    set[0][i].style.top = "0px";
-    set[0][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[0],set[0][i]))*200
+set[0][i].style.top = "0px";
+set[0][i].style.left = position.toString()+"px";
 }
 
 for (i=0; i<3; i++) {
-    position = (Array.prototype.indexOf.call(set[1],set[1][i]))*200
-    set[1][i].style.top = "200px";
-    set[1][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[1],set[1][i]))*200
+set[1][i].style.top = "200px";
+set[1][i].style.left = position.toString()+"px";
 }
 
 for (i=0; i<3; i++) {
-    position = (Array.prototype.indexOf.call(set[2],set[2][i]))*200
-    set[2][i].style.top = "400px";
-    set[2][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[2],set[2][i]))*200
+set[2][i].style.top = "400px";
+set[2][i].style.left = position.toString()+"px";
 }
 }
 
@@ -163,13 +163,13 @@ for (i=0; i<3; i++) {
 function moveSlide(slide){
 
 if (isRight(slide)){
-    moveRight(slide);
+moveRight(slide);
 } else if (isLeft(slide)) {
-    moveLeft(slide);
+moveLeft(slide);
 } else if (isTop(slide)){
-    moveTop(slide);
+moveTop(slide);
 } else if (isDown(slide)){
-    moveDown(slide)
+moveDown(slide)
 }
 }
 
@@ -182,7 +182,7 @@ function isRight(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position + 1;
 if(Object.is(game.slides[blank_position],game.empty) && position!=5 && position!=2 && position!=8){
-    return true;
+return true;
 }
 }
 
@@ -214,7 +214,7 @@ function isLeft(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position - 1;
 if(Object.is(game.slides[blank_position],game.empty) &&  position!=0 && position!=3 && position!=6){
-    return true;
+return true;
 }
 }
 
@@ -246,7 +246,7 @@ function isTop(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position-3;
 if (Object.is(game.slides[blank_position],game.empty)) {
-    return true;
+return true;
 }
 }
 
@@ -278,7 +278,7 @@ function isDown(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position+3;
 if (Object.is(game.slides[blank_position],game.empty)) {
-    return true;
+return true;
 }
 }
 
@@ -309,9 +309,9 @@ game.slides[position] = game.empty;
  */
 function checkBoard(board,winboard){
 for(i=0; i<board.length; i++){
-    if(board[i]!=winboard[i]){
-        return false
-    }
+if(board[i]!=winboard[i]){
+    return false
+}
 }
 return true;
 }
@@ -321,7 +321,7 @@ return true;
  */
 function win() {
 if(checkBoard(game.slides,game.win)){
-    setTimeout(function(){ alert("You win!"); }, 500);
+setTimeout(function(){ alert("You win!"); }, 500);
 }
 }
 
@@ -330,3 +330,120 @@ setGameImage();
 slideClick();
 setSlides();
 }(game));
+
+
+
+window.addEventListener("DOMContentLoaded", stopwatch);
+
+function stopwatch() {
+
+    var stopTime = 0;
+    var startTime = 0;
+
+    var time = document.getElementById("time");
+
+
+    //Set an interval to update the clock
+    var intervalID = setInterval(function() {
+        var elapsedTime = Date.now() - startTime;
+        time.textContent = formatTime(elapsedTime);
+        }, 100)
+
+    var start = document.getElementsByClassName("slide").addEventListener("click", function() {
+        if (intervalID === 0) {
+            startTime = Date.now();
+            intervalID = 1
+            return;
+        }
+    })
+
+    var stop = win().addEventListener(win(), function() {
+        if (intervalID === 1) {
+            stopTime = Date.now();
+            intervalID = 0
+            clearInterval(intervalID);
+            return;
+        }
+    })
+    var reset = document.getElementById("image-select").addEventListener("click", function() {
+        startTime = intervalID ? Date.now() : 0;
+        stopTime = 0;
+        clock.textContent = "00:00";
+    })    
+    
+}
+
+/**
+ * Sets up and runs the Timer For the game.
+ 
+window.addEventListener("DOMContentLoaded", setupStopwatch);
+
+// Sets up the stopwatch
+function setupStopwatch() {
+
+var time = document.getElementById("time");
+var start = document.getElementsByClassName("slide")
+var stop = win(true)
+var reset = document.getElementById("image-select")
+var stopTime = 0;
+var startTime = 0;
+var intervalID = 0;
+
+//Starts the clock
+start.addEventListener("click", function() {
+    if (intervalID === 0) {
+        startTime = Date.now();
+        intervalID = 1
+        return;
+    }
+})
+
+//Stops the clock
+stop.addEventListener("click", function() {
+    if (intervalID === 1) {
+        stopTime = Date.now();
+        intervalID = 0
+        clearInterval(intervalID);
+        return;
+    }
+})
+
+//Set an interval to update the clock
+intervalID = setInterval(function() {
+    var elapsedTime = Date.now() - startTime;
+    time.textContent = formatTime(elapsedTime);
+    }, 100)
+
+//Resets the clock when a new image is clicked
+reset.addEventListener("click", function() {
+    if (intervalID === 1) {
+        stopTime = Date.now();
+        intervalID = 0
+        clearInterval(intervalID);
+        time.textContent = "00:00";
+        return;
+    } else {
+        intervalID = 0
+        clearInterval(intervalID);
+        time.textContent = "00:00";
+    }
+})
+}
+*/
+
+// Helper function that takes a UTC timestamp and returns a formatted time string
+function formatTime(timestamp) {
+var d = new Date(timestamp);
+
+var minutes = d.getMinutes();
+if (minutes < 10) {
+minutes = "0" + minutes;
+}
+
+var seconds = d.getSeconds();
+if (seconds < 10) {
+seconds = "0" + seconds;
+}
+
+return minutes + ":" + seconds;
+}
