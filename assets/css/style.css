@@ -124,7 +124,7 @@ width: 50px;
 /* Menu Posistioning */
 .menu {
 position: fixed;
-transform: translateY(-100%);
+transform: translateX(100%);
 transition: transform 0.2s;
 top: 0;
 left: 0;
@@ -137,7 +137,7 @@ padding-top: 4rem;
 }
 
 .showMenu {
-transform: translateY(0);
+transform: translateX(0);
 }
 
 .menuItem {
@@ -521,7 +521,7 @@ object-fit: contain;
 }
 
 .game-img, .image-selector {
-    display: inline-block;
+display: inline-block;
 }
 
 #game-area-outer {
@@ -571,7 +571,7 @@ margin: 0 2.5%;
 }
 
 #imagesright {
-    float: right;
+float: right;
 }
 
 #image-select-title {
@@ -593,11 +593,11 @@ height: 100%;
 }
 
 #clock h1 {
-    font-size: 300%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+font-size: 300%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
 }
 
 /* Footer Styles */
@@ -638,3 +638,89 @@ width: 50px;
 margin: 0 1%;
 }
 
+/* media queries styles */
+@media screen and (max-width: 1050px) {
+
+.hero-outer, #hero {
+    width: 100%;
+    height: 500px;
+}
+
+header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
+    height: 500px;
+}
+
+#home-header, #contact-header, #about-header {
+    transform: translate(0, -200%);
+    font-size: 75%;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.my-work{
+    font-size: 75%;
+}
+
+#about-me-outer {
+    display: block;
+    height: 300px;
+}
+
+#about-me {
+    width: 95%;
+    margin: 0 auto;
+    height: 300px;
+}
+    
+#about-me-img {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 2.5%;
+}
+    
+#about-me-text {
+    height: 300px;
+    margin: 0, auto;
+}
+    
+#about-me-text p {
+    font-size: 125%;
+}
+        
+.items .item {
+    width: 350px;
+    height: 350px;
+}
+
+#carousel{
+    height: 550px;
+}
+
+#contact{
+    margin-top: 5%;
+}
+
+.contact-images {
+    width: 32.9%;
+}
+
+#image-select-title {
+    margin-top: 0;
+}
+    
+.nav-footer {
+    font-size: medium;
+}
+
+#social-networks-list {
+    height: 50px;
+}
+
+.social-networks img {
+    height: 30px;
+    width: 30px;
+}
+}
