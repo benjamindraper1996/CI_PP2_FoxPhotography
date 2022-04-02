@@ -331,69 +331,55 @@ slideClick();
 setSlides();
 }(game));
 
-
 /**
  * Controls the in game timer.
  */
-window.addEventListener("DOMContentLoaded", stopwatch);
-
-/**
- * sets up, starts, stops and resets the timer.
- */
-function stopwatch() {
-
-var stopTime = 0;
-var startTime = 0;
-var intervalID = 0;
-var time = document.getElementById("time");
-
-//Starts the timer when the first slide is clicked.
-var start = document.getElementsByClassName("slide").addEventListener("click", function() {
-    if (intervalID === 0) {
-        startTime = Date.now();
-        intervalID = 1
-        return;
+ let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+ let timerRef = document.querySelector('#time');
+ let int = null;
+ 
+ //starts the timer when the first slide is clicked
+ document.getElementById('game-area').addEventListener('click', ()=>{
+     if(int!==null){
+         clearInterval(int);
+     }
+     int = setInterval(displayTimer,10);
+ });
+ 
+ //stops the timer when the first slide is clicked
+    if (checkBoard(game.slides,game.win)) {
+        clearInterval(int);
+        [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+        timerRef.innerHTML = '00 : 00 : 00 : 000 ';
     }
-})
-
-//Stops the timer when the game is won.
-var stop = win().addEventListener(win(), function() {
-    if (intervalID === 1) {
-        stopTime = Date.now();
-        intervalID = 0
-        clearInterval(intervalID);
-        return;
-    }
-})
-
-// Resets the timer when a new image is chosen.
-var reset = document.getElementById("image-select").addEventListener("click", function() {
-    startTime = intervalID ? Date.now() : 0;
-    stopTime = 0;
-    clock.textContent = "00:00";
-})
-
-//Set an interval to update the clock
-var intervalID = setInterval(function() {
-    var elapsedTime = Date.now() - startTime;
-    time.textContent = formatTime(elapsedTime);
-    }, 100)
-
-}
-
-// Helper function that takes a UTC timestamp and returns a formatted time string
-function formatTime(timestamp) {
-var d = new Date(timestamp);
-
-var minutes = d.getMinutes();
-if (minutes < 10) {
-minutes = "0" + minutes;
-}
-
-var seconds = d.getSeconds();
-if (seconds < 10) {
-seconds = "0" + seconds;
-}
-
-return minutes + ":" + seconds;
-}
+ 
+ //Resets the timer when a new image is selected.
+ document.getElementById('image-select').addEventListener('click', ()=>{
+     clearInterval(int);
+     [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+     timerRef.innerHTML = '00 : 00 : 00 : 000 ';
+ });
+ 
+ //Controls the display of the timer.
+ function displayTimer(){
+     milliseconds+=10;
+     if(milliseconds == 1000){
+         milliseconds = 0;
+         seconds++;
+         if(seconds == 60){
+             seconds = 0;
+             minutes++;
+             if(minutes == 60){
+                 minutes = 0;
+                 hours++;
+             }
+         }
+     }
+ 
+  let h = hours < 10 ? "0" + hours : hours;
+  let m = minutes < 10 ? "0" + minutes : minutes;
+  let s = seconds < 10 ? "0" + seconds : seconds;
+  let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+ 
+  timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+ }
