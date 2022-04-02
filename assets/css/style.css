@@ -642,154 +642,215 @@ margin: 0 1%;
 @media screen and (max-width: 1050px) {
 
 .hero-outer, #hero {
-    width: 100%;
-    height: 500px;
+width: 100%;
+height: 500px;
 }
 
 
 header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
-    height: 500px;
+height: 500px;
 }
 
 /* Reposition headers */
 #home-header, #contact-header, #about-header, #error-header {
-    transform: translate(0, -200%);
-    font-size: 75%;
+transform: translate(0, -200%);
+font-size: 75%;
 }
 
 .spacer {
-    height: 20px;
+height: 20px;
 }
 
 .my-work{
-    font-size: 75%;
+font-size: 75%;
 }
 
 /* About me page styles */
 #about-me-outer {
-    display: block;
-    height: 300px;
+display: block;
+height: 300px;
 }
 
 #about-me {
-    width: 95%;
-    margin: 0 auto;
-    height: 300px;
+width: 95%;
+margin: 0 auto;
+height: 300px;
 }
-    
+
 #about-me-img {
-    height: 300px;
-    width: 300px;
-    float: left;
-    margin-left: 2.5%;
+height: 300px;
+width: 300px;
+float: left;
+margin-left: 2.5%;
 }
-    
+
 #about-me-text {
-    height: 300px;
-    margin: 0, auto;
+height: 300px;
+margin: 0, auto;
 }
-    
+
 #about-me-text p {
-    font-size: 125%;
+font-size: 125%;
 }
 
 .items .item {
-    width: 350px;
-    height: 350px;
+width: 350px;
+height: 350px;
 }
 
 #carousel{
-    height: 550px;
+height: 550px;
 }
 
 #contact{
-    margin-top: 5%;
+margin-top: 5%;
 }
 
 .contact-images {
-    width: 32.9%;
+width: 32.9%;
 }
 
 /* Game page styles */
 
 #image-select-title {
-    margin-top: 0;
+margin-top: 0;
 }
 
 /* Footer styles */
 .nav-footer {
-    font-size: medium;
+font-size: medium;
 }
 
 #social-networks-list {
-    height: 50px;
+height: 50px;
 }
 
 .social-networks img {
-    height: 30px;
-    width: 30px;
+height: 30px;
+width: 30px;
 }
 }
 
 /* media query for screen size 800px styles */
 @media screen and (max-width: 800px) {
-    header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
-        height: 400px;
-    }
+header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
+height: 400px;
+}
+
+.hero-outer, #hero {
+height: 400px;
+}
+
+/*  Header styles */
+#home-header, #about-header, #contact-header, #game-header{
+font-size: 70%;
+}
+
+.my-work{
+font-size: 70%;
+}
+
+/* About page styles */
+#about-me {
+height: 250px;
+}
+
+#about-me-img {
+height: 250px;
+width: 250px;
+}
+
+#about-me-text {
+height: 250px;
+}
+
+#about-me-text p {
+font-size: 100%;
+}
     
-    .hero-outer, #hero {
-        height: 400px;
-    }
+.items .item {
+width: 300px;
+height: 300px;
+}
+
+#carousel{
+height: 500px;
+}
+
+#contact{
+margin-top: 50px;
+}
+
+#contact-img{
+height: 350px;
+}
+
+.contact-images{
+width: 32.8%;
+height: 300px;
+}
+
+/* Game page styles */
+#image-select-title{
+font-size: 200%;
+margin-top: 10px;
+}
+}
+
+/* media query for screen size 800px styles */
+@media screen and (max-width: 500px) {
+header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-header {
+    height: 300px;
+}
+
+#home-header, #about-header, #contact-header, #game-header, .my-work{
+    font-size: 60%;
+}
+
+.headerbox-spacer, .imgsquare{
+    height: 250px;
+}
+
+#about-me-outer {
+    width: 100%;
+    height: 500px;
+}
+
+#about-me {
+    width: 100%;
+    height: 200px;
+    float: none;
+}
     
-    #home-header, #about-header, #contact-header, #game-header{
-        font-size: 70%;
-    }
+#about-me-img {
+    height: 300px;
+    width: 300px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
     
-    .my-work{
-        font-size: 70%;
-    }
+#about-me-text {
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    float: none;
+}
     
-    #about-me {
-        height: 250px;
-    }
+#about-me-text p {
+    font-size: 85%;
+}
         
-    #about-me-img {
-        height: 250px;
-        width: 250px;
-    }
-        
-    #about-me-text {
-        height: 250px;
-    }
-        
-    #about-me-text p {
-        font-size: 100%;
-    }
-            
-    .items .item {
-        width: 300px;
-        height: 300px;
-    }
-    
-    #carousel{
-        height: 500px;
-    }
-    
-    #contact{
-        margin-top: 50px;
-    }
-    
-    #contact-img{
-        height: 350px;
-    }
-    
-    .contact-images{
-        width: 32.8%;
-        height: 300px;
-    }
-    
-    #image-select-title{
-        font-size: 200%;
-        margin-top: 10px;
-    }
-    }
+.items .item {
+    width: 250px;
+    height: 250px;
+}
+
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 92;
+}
+}
