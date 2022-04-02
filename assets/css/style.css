@@ -84,7 +84,7 @@ font-size: 300%;
 }
 
 /* Reposition headers */
-#home-header, #about-header, #contact-header, #game-header {
+#home-header, #about-header, #contact-header, #game-header, #error-header {
 position: relative;
 transform: translate(0, -300%);
 }
@@ -638,7 +638,7 @@ width: 50px;
 margin: 0 1%;
 }
 
-/* media queries styles */
+/* media query for screen size 1050px styles */
 @media screen and (max-width: 1050px) {
 
 .hero-outer, #hero {
@@ -646,11 +646,13 @@ margin: 0 1%;
     height: 500px;
 }
 
+
 header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
     height: 500px;
 }
 
-#home-header, #contact-header, #about-header {
+/* Reposition headers */
+#home-header, #contact-header, #about-header, #error-header {
     transform: translate(0, -200%);
     font-size: 75%;
 }
@@ -663,6 +665,7 @@ header, .header-box, .about-header, .contact-header, .game-header, .headerbox-sp
     font-size: 75%;
 }
 
+/* About me page styles */
 #about-me-outer {
     display: block;
     height: 300px;
@@ -689,7 +692,7 @@ header, .header-box, .about-header, .contact-header, .game-header, .headerbox-sp
 #about-me-text p {
     font-size: 125%;
 }
-        
+
 .items .item {
     width: 350px;
     height: 350px;
@@ -707,10 +710,13 @@ header, .header-box, .about-header, .contact-header, .game-header, .headerbox-sp
     width: 32.9%;
 }
 
+/* Game page styles */
+
 #image-select-title {
     margin-top: 0;
 }
-    
+
+/* Footer styles */
 .nav-footer {
     font-size: medium;
 }
@@ -724,3 +730,66 @@ header, .header-box, .about-header, .contact-header, .game-header, .headerbox-sp
     width: 30px;
 }
 }
+
+/* media query for screen size 800px styles */
+@media screen and (max-width: 800px) {
+    header, .header-box, .about-header, .contact-header, .game-header, .headerbox-spacer, .imgsquare {
+        height: 400px;
+    }
+    
+    .hero-outer, #hero {
+        height: 400px;
+    }
+    
+    #home-header, #about-header, #contact-header, #game-header{
+        font-size: 70%;
+    }
+    
+    .my-work{
+        font-size: 70%;
+    }
+    
+    #about-me {
+        height: 250px;
+    }
+        
+    #about-me-img {
+        height: 250px;
+        width: 250px;
+    }
+        
+    #about-me-text {
+        height: 250px;
+    }
+        
+    #about-me-text p {
+        font-size: 100%;
+    }
+            
+    .items .item {
+        width: 300px;
+        height: 300px;
+    }
+    
+    #carousel{
+        height: 500px;
+    }
+    
+    #contact{
+        margin-top: 50px;
+    }
+    
+    #contact-img{
+        height: 350px;
+    }
+    
+    .contact-images{
+        width: 32.8%;
+        height: 300px;
+    }
+    
+    #image-select-title{
+        font-size: 200%;
+        margin-top: 10px;
+    }
+    }
