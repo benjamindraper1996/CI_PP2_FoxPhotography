@@ -586,6 +586,10 @@ margin-bottom: 30px;
 display: none;
 }
 
+#clock {
+float: left;
+}
+
 /* Footer Styles */
 #social-networks-list, .social-networks, .nav-footer {
 list-style-type: none;
