@@ -588,6 +588,16 @@ display: none;
 
 #clock {
 float: left;
+width: 32%;
+height: 100%;
+}
+
+#clock h1 {
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Footer Styles */
