@@ -138,21 +138,21 @@ x = shuffleSlides(x);
 var set = [[x[0],x[1],x[2]],[x[3],x[4],x[5]],[x[6],x[7],x[8]]];
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[0],set[0][i]))*200
-set[0][i].style.top = "0px";
-set[0][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[0],set[0][i]))*33.3333333333
+set[0][i].style.top = "0";
+set[0][i].style.left = position.toString()+"%";
 }
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[1],set[1][i]))*200
-set[1][i].style.top = "200px";
-set[1][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[1],set[1][i]))*33.3333333333
+set[1][i].style.top = "33.3333333333%";
+set[1][i].style.left = position.toString()+"%";
 }
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[2],set[2][i]))*200
-set[2][i].style.top = "400px";
-set[2][i].style.left = position.toString()+"px";
+position = (Array.prototype.indexOf.call(set[2],set[2][i]))*33.3333333333
+set[2][i].style.top = "66.6666666666%";
+set[2][i].style.left = position.toString()+"%";
 }
 }
 
@@ -193,14 +193,14 @@ return true;
 function moveRight(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
-var res = current_posX.split('px')[0];
+var res = current_posX.split('%')[0];
 current = eval(res);
-slide.style.left = (current+200).toString()+"px";
+slide.style.left = (current+33.3333333333).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posX = game.empty.style.left;
-var res_blank = current_blank_posX.split('px')[0];
+var res_blank = current_blank_posX.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.left = (current_blank-200).toString()+"px"; 
+game.empty.style.left = (current_blank-33.3333333333).toString()+"%"; 
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty; 
 }
@@ -225,14 +225,14 @@ return true;
 function moveLeft(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
-var res = current_posX.split('px')[0];
+var res = current_posX.split('%')[0];
 current = eval(res);
-slide.style.left = (current-200).toString()+"px";
+slide.style.left = (current-33.3333333333).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posX = game.empty.style.left;
-var res_blank = current_blank_posX.split('px')[0];
+var res_blank = current_blank_posX.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.left = (current_blank+200).toString()+"px";
+game.empty.style.left = (current_blank+33.3333333333).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
@@ -257,14 +257,14 @@ return true;
 function moveTop(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
-var res = current_posY.split('px')[0];
+var res = current_posY.split('%')[0];
 current = eval(res);
-slide.style.top = (current-200).toString()+"px";
+slide.style.top = (current-33.3333333333).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posY = game.empty.style.top;
-var res_blank = current_blank_posY.split('px')[0];
+var res_blank = current_blank_posY.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.top = (current_blank + 200).toString()+"px";
+game.empty.style.top = (current_blank + 33.3333333333).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
@@ -289,14 +289,14 @@ return true;
 function moveDown(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
-var res = current_posY.split('px')[0];
+var res = current_posY.split('%')[0];
 current = eval(res);
-slide.style.top = (current+200).toString()+"px";
+slide.style.top = (current+33.3333333333).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posY = game.empty.style.top;
-var res_blank = current_blank_posY.split('px')[0];
+var res_blank = current_blank_posY.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.top = (current_blank - 200).toString()+"px";
+game.empty.style.top = (current_blank - 33.3333333333).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
