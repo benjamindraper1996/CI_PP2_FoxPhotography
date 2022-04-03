@@ -496,7 +496,7 @@ object-fit: cover;
 
 /* Game Area Styles */
 .game-img-outer, #game-area-outer {
-height: 605px;
+height: 655px;
 width: 95%;
 margin: auto;
 }
@@ -506,6 +506,8 @@ margin: auto;
 height: 600px;
 width: 600px;
 border: 3px solid #000;
+position: relative;
+transform: translate(10px, 25px);
 }
 
 .game-img {
@@ -548,6 +550,10 @@ cursor: pointer;
 background-size: contain;
 }
 
+.number {
+    display: none;
+}
+
 #blank {
 cursor: default;
 border: none;
@@ -555,26 +561,17 @@ border: none;
 
 /* Image Selector area */
 .img-select {
-height: 120px;
-width: 120px;
+height: 100px;
+width: 100px;
 float: none;
 }
 
 .image-selector {
 float: left;
-width: 7%;
-height: 100%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin-left: 5%;
-
-}
-
-#imagesright {
-float: right;
-margin-right: 5%;
-margin-left: 0;
+text-align: center;
+width: 15%;
+height: 95%;
+margin-top: 2.5%;
 }
 
 #image-select-title {
@@ -585,17 +582,14 @@ text-align: center;
 margin-bottom: 30px;
 }
 
-.number {
-display: none;
-}
-
+/*Timer Styles */
 #clock {
 float: left;
 width: 32%;
 height: 100%;
 }
 
-#clock h1 {
+#time {
 font-size: 200%;
 display: flex;
 justify-content: center;
