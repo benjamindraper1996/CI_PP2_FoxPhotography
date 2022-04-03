@@ -34,42 +34,42 @@ game.imgSelect = document.getElementsByClassName('img-select');
  */
 function setGameImage(folderpath) {
 if (folderpath == undefined) {
-var randomFolder = Math.floor((Math.random()*6));
-var folder = game.folderList[randomFolder]
-document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
+    var randomFolder = Math.floor((Math.random()*6));
+    var folder = game.folderList[randomFolder]
+    document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
 
-for (i=0;i<game.slides.length; i++) {
-var slideImage = i + 1;
-game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
-}
+    for (i=0;i<game.slides.length; i++) {
+        var slideImage = i + 1;
+        game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
+    }
 } else {
-document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
-for(var i=0;i<game.slides.length;i++) {
-    var slideImage = i + 1;
-    game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
-}
-}
+    document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
+        for(var i=0;i<game.slides.length;i++) {
+            var slideImage = i + 1;
+            game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
+        }
+    }
 }
 
 /**
  * slideClick adds the listners for the image selectors and slider tiles then calls the function to move the slide.
  */
 function slideClick () {
-for (i=0; i<game.slides.length; i++) {
-game.slides[i].addEventListener('click', function() {
-moveSlide(this);
-win();
-});
+    for (i=0; i<game.slides.length; i++) {
+        game.slides[i].addEventListener('click', function() {
+        moveSlide(this);
+        win();
+    });
 }
 
 // Resets and shuffles the game board
 for (i=0; i<game.imgSelect.length; i++) {
-game.imgSelect[i].addEventListener('click', function(){
-game.slides = Array.from(document.getElementsByClassName('slide'));
-setGameImage(this.name);
-setSlides(game);
-game.gameArea.style.display = "block";
-});
+    game.imgSelect[i].addEventListener('click', function(){
+        game.slides = Array.from(document.getElementsByClassName('slide'));
+        setGameImage(this.name);
+        setSlides(game);
+        game.gameArea.style.display = "block";
+    });
 }
 }
 
@@ -92,39 +92,39 @@ var middle = [1,3,-3,-1];
 var moves;
 
 for(i=0; i<a; i++) {				
-var position = Array.prototype.indexOf.call(array,game.empty);
+    var position = Array.prototype.indexOf.call(array,game.empty);
 
-if(position == 0){
-moves = topLeft;
-}
-if (position == 1) {
-moves = middleTop;
-}
-if(position == 2){
-moves = topRight;
-}
-if(position == 3){
-moves = middleLeft;
-}
-if(position == 4){
-moves = middle;
-}
-if(position == 5){
-moves = middleRight;
-}
-if (position == 6) {
-moves = bottomLeft;
-}
-if (position == 7) {
-moves = middleBottom
-}
-if (position == 8) {
-moves = bottomRight;
-}
+    if(position == 0){
+        moves = topLeft;
+    }
+    if (position == 1) {
+        moves = middleTop;
+    }
+    if(position == 2){
+        moves = topRight;
+    }
+    if(position == 3){
+        moves = middleLeft;
+    }
+    if(position == 4){
+        moves = middle;
+    }
+    if(position == 5){
+        moves = middleRight;
+    }
+    if (position == 6) {
+        moves = bottomLeft;
+    }
+    if (position == 7) {
+        moves = middleBottom
+    }
+    if (position == 8) {
+        moves = bottomRight;
+    }
 
-move = moves[Math.floor(Math.random()*moves.length)];
-array[position] = array[position+move];
-array[position+move] = game.empty;
+    move = moves[Math.floor(Math.random()*moves.length)];
+    array[position] = array[position+move];
+    array[position+move] = game.empty;
 }
 return array
 }
@@ -138,21 +138,21 @@ x = shuffleSlides(x);
 var set = [[x[0],x[1],x[2]],[x[3],x[4],x[5]],[x[6],x[7],x[8]]];
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[0],set[0][i]))*33.3333333333
-set[0][i].style.top = "0";
-set[0][i].style.left = position.toString()+"%";
+    position = (Array.prototype.indexOf.call(set[0],set[0][i]))*(100/3)
+    set[0][i].style.top = "0%";
+    set[0][i].style.left = position.toString()+"%";
 }
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[1],set[1][i]))*33.3333333333
-set[1][i].style.top = "33.3333333333%";
-set[1][i].style.left = position.toString()+"%";
+    position = (Array.prototype.indexOf.call(set[1],set[1][i]))*(100/3)
+    set[1][i].style.top = "33.33%";
+    set[1][i].style.left = position.toString()+"%";
 }
 
 for (i=0; i<3; i++) {
-position = (Array.prototype.indexOf.call(set[2],set[2][i]))*33.3333333333
-set[2][i].style.top = "66.6666666666%";
-set[2][i].style.left = position.toString()+"%";
+    position = (Array.prototype.indexOf.call(set[2],set[2][i]))*(100/3)
+    set[2][i].style.top = "66.6%";
+    set[2][i].style.left = position.toString()+"%";
 }
 }
 
@@ -163,13 +163,13 @@ set[2][i].style.left = position.toString()+"%";
 function moveSlide(slide){
 
 if (isRight(slide)){
-moveRight(slide);
+    moveRight(slide);
 } else if (isLeft(slide)) {
-moveLeft(slide);
+    moveLeft(slide);
 } else if (isTop(slide)){
-moveTop(slide);
+    moveTop(slide);
 } else if (isDown(slide)){
-moveDown(slide)
+    moveDown(slide)
 }
 }
 
@@ -182,7 +182,7 @@ function isRight(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position + 1;
 if(Object.is(game.slides[blank_position],game.empty) && position!=5 && position!=2 && position!=8){
-return true;
+    return true;
 }
 }
 
@@ -195,12 +195,12 @@ var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
 var res = current_posX.split('%')[0];
 current = eval(res);
-slide.style.left = (current+33.3333333333).toString()+"%";
+slide.style.left = (current+(100/3)).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posX = game.empty.style.left;
 var res_blank = current_blank_posX.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.left = (current_blank-33.3333333333).toString()+"%"; 
+game.empty.style.left = (current_blank-(100/3)).toString()+"%"; 
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty; 
 }
@@ -214,7 +214,7 @@ function isLeft(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position - 1;
 if(Object.is(game.slides[blank_position],game.empty) &&  position!=0 && position!=3 && position!=6){
-return true;
+    return true;
 }
 }
 
@@ -227,12 +227,12 @@ var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posX = slide.style.left;
 var res = current_posX.split('%')[0];
 current = eval(res);
-slide.style.left = (current-33.3333333333).toString()+"%";
+slide.style.left = (current-(100/3)).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posX = game.empty.style.left;
 var res_blank = current_blank_posX.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.left = (current_blank+33.3333333333).toString()+"%";
+game.empty.style.left = (current_blank+(100/3)).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
@@ -246,7 +246,7 @@ function isTop(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position-3;
 if (Object.is(game.slides[blank_position],game.empty)) {
-return true;
+    return true;
 }
 }
 
@@ -259,12 +259,12 @@ var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
 var res = current_posY.split('%')[0];
 current = eval(res);
-slide.style.top = (current-33.3333333333).toString()+"%";
+slide.style.top = (current-(100/3)).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posY = game.empty.style.top;
 var res_blank = current_blank_posY.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.top = (current_blank + 33.3333333333).toString()+"%";
+game.empty.style.top = (current_blank + (100/3)).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
@@ -278,7 +278,7 @@ function isDown(slide){
 var position = Array.prototype.indexOf.call(game.slides,slide);
 blank_position = position+3;
 if (Object.is(game.slides[blank_position],game.empty)) {
-return true;
+    return true;
 }
 }
 
@@ -291,12 +291,12 @@ var position = Array.prototype.indexOf.call(game.slides,slide);
 var current_posY = slide.style.top;
 var res = current_posY.split('%')[0];
 current = eval(res);
-slide.style.top = (current+33.3333333333).toString()+"%";
+slide.style.top = (current+(100/3)).toString()+"%";
 var blank_position = Array.prototype.indexOf.call(game.slides,game.empty);
 var current_blank_posY = game.empty.style.top;
 var res_blank = current_blank_posY.split('%')[0];
 var current_blank = eval(res_blank);
-game.empty.style.top = (current_blank - 33.3333333333).toString()+"%";
+game.empty.style.top = (current_blank - (100/3)).toString()+"%";
 game.slides[blank_position] = game.slides[position]
 game.slides[position] = game.empty;
 }
@@ -309,9 +309,9 @@ game.slides[position] = game.empty;
  */
 function checkBoard(board,winboard){
 for(i=0; i<board.length; i++){
-if(board[i]!=winboard[i]){
-return false
-}
+    if(board[i]!=winboard[i]){
+        return false
+    }
 }
 return true;
 }
@@ -321,7 +321,7 @@ return true;
  */
 function win() {
 if(checkBoard(game.slides,game.win)){
-setTimeout(function(){ alert("You win!"); }, 500);
+    setTimeout(function(){ alert("You win!"); }, 500);
 }
 }
 
@@ -330,56 +330,3 @@ setGameImage();
 slideClick();
 setSlides();
 }(game));
-
-/**
- * Controls the in game timer.
- */
- let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
- let timerRef = document.querySelector('#time');
- let int = null;
- 
- //starts the timer when the first slide is clicked
- document.getElementById('game-area').addEventListener('click', ()=>{
-     if(int!==null){
-         clearInterval(int);
-     }
-     int = setInterval(displayTimer,10);
- });
- 
- //stops the timer when the first slide is clicked
-    if (checkBoard(game.slides,game.win)) {
-        clearInterval(int);
-        [milliseconds,seconds,minutes,hours] = [0,0,0,0];
-        timerRef.innerHTML = '00 : 00 : 00 : 000 ';
-    }
- 
- //Resets the timer when a new image is selected.
- document.getElementById('image-select').addEventListener('click', ()=>{
-     clearInterval(int);
-     [milliseconds,seconds,minutes,hours] = [0,0,0,0];
-     timerRef.innerHTML = '00 : 00 : 00 : 000 ';
- });
- 
- //Controls the display of the timer.
- function displayTimer(){
-     milliseconds+=10;
-     if(milliseconds == 1000){
-         milliseconds = 0;
-         seconds++;
-         if(seconds == 60){
-             seconds = 0;
-             minutes++;
-             if(minutes == 60){
-                 minutes = 0;
-                 hours++;
-             }
-         }
-     }
- 
-  let h = hours < 10 ? "0" + hours : hours;
-  let m = minutes < 10 ? "0" + minutes : minutes;
-  let s = seconds < 10 ? "0" + seconds : seconds;
-  let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
- 
-  timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
- }
