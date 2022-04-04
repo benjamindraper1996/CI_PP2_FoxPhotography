@@ -173,6 +173,12 @@ The website consists of four main pages and a 404 Error Page:
 - User stories covered: 1,7,9,10,11
 ![Footer](documentation/features/footer.JPG)
 
+### About The Business
+- Featured on the about page.
+- This consists of a picture of the owner and a description of the owner and the business.
+- This is fully responsive down to mobile size devices.
+- User stories covered: 4,7,11
+![ About The Business](documentation/features/about-the-business.JPG)
 
 
 ## Validation
