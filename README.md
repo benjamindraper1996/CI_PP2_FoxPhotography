@@ -146,6 +146,19 @@ The website consists of four main pages and a 404 Error Page:
 - TinyPNG
 
 ## Features
+### Dropdown navigation Menu
+- Featured on all Pages across the website.
+- The dropdown menu is fully responsive uses a hamburger style button across all sizes.
+- The dropdown menu includes links to allow users to navigate around the site easily.
+- The dropdown menu includes the social media icons that open a link in a new tab.
+- The dropdown menu includes the dark theme switch toggler option for users that prefer to use a darker screen.
+- The link that the user is currently hovering over is underlined for easy visibility.
+- user stories covered: 1,9,11
+![ Dropdown navigation Menu](documentation/features/hamburger.JPG)
+![ Dropdown navigation Menu open](documentation/features/menu.JPG)
+![ Dropdown navigation Menu open](documentation/features/menu-dark.JPG)
+
+
 
 
 
