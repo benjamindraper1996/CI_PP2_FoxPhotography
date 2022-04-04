@@ -166,6 +166,12 @@ The website consists of four main pages and a 404 Error Page:
 ![Image Gallery Before](documentation/features/gallery1.JPG)
 ![Image Gallery After](documentation/features/gallery2.JPG)
 
+### Footer
+- Featured across the whole website.
+- Consists of two separate divs that contain nav links and social media links that open in a new page.
+- The footer is fully responsive down to mobile size devices.
+- User stories covered: 1,7,9,10,11
+![Footer](documentation/features/footer.JPG)
 
 
 
