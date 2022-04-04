@@ -46,10 +46,10 @@
 - Find the location on the business.
 
 ### Site Owner Goals
-- Increase the number of customers through vistitors to the website.
+- Increase the number of customers through visitors to the website.
 - Promote the company to new and existing users.
 - Provide a way for customers to contact the business for all queries.
-- Provide essential information to any one who needs it.
+- Provide essential information to anyone who needs it.
 
 
 ## User Experience
@@ -107,11 +107,15 @@ For the colour scheme the website owner has chosen to implement a dark and light
 ### Fonts
  The business owner preferred the use of 'Josefin Slab' font as the main, with a backup of sans-serif across the website for the title and headers. This is used to maintain a Consistent and professional look with an easily readable format. 
 <br>
-For the Secondary font for the body text the owners decided to use 'Poiret One' with a backup of sans-serif, this will help to maintain the consistant theme across the website. 
-
+For the Secondary font for the body text the owners decided to use 'Poiret One' with a backup of sans-serif, this will help to maintain the consistent theme across the website.
 
 ### Structure
-
+The Pages are structured in a Regularly used, user friendly and well-known format. This makes each page easy to navigate, coupled with a dropdown navigation menu and secondary footer navigation menu this gives the user many options for navigating around the website.
+The website consists of four main pages and a 404 Error Page:
+- Home page: This page shows off some of the work the business has done through a revolving image gallery.
+- About page: This page gives the bulk of the information about the business itself and its owner, with more examples of the work they have done.
+- Contact page: This page gives the user a way of getting in touch with the business via email. It also shows you the address and a Map of their location.
+- Game page: This page offers the user the opportunity to play a small game made from the work that the business has done in the past.
 
 ### Wireframes
 
