@@ -785,6 +785,11 @@ height: 300px;
 font-size: 200%;
 margin-top: 10px;
 }
+
+/* Contact page styles */
+#address h1 {
+    font-size: 120%;
+}
 }
 
 /* media query for screen size 500px styles */
