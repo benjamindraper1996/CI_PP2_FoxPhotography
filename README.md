@@ -142,6 +142,8 @@ The website consists of four main pages and a 404 Error Page:
 - Favicon<span>.</span>io
 - coolors
 - Am I Responsive?
+- EmailJS
+- TinyPNG
 
 ## Features
 
