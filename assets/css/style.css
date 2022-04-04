@@ -706,6 +706,11 @@ width: 32.9%;
 margin-top: 0;
 }
 
+#gameimage{
+    height: 500px;
+    width:500px;
+}
+
 /* Footer styles */
 .nav-footer {
 font-size: medium;
@@ -719,6 +724,7 @@ height: 50px;
 height: 30px;
 width: 30px;
 }
+
 }
 
 /* media query for screen size 800px styles */

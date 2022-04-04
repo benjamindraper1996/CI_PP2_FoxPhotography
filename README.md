@@ -82,7 +82,7 @@
 7. As a returning user, I would like to find out more information about the company. 
  
 #### Company Owner 
-8. As the company owner, I want users to be able to see the galley with ease.
+8. As the company owner, I want users to be able to see the gallery with ease.
 9. As the company owner, I want users to get to know the website. 
 10. As the company owner, I want the users to be able to contact us easily.
 11. As the company owner, I want the website to act in a responsive manner on all devices.
@@ -91,10 +91,9 @@
 ## Design
 
 ### Design Choices
-
+The website design was made to reflect on the business owner’s preference, they preferred to have a much brighter colour palette so that it would attract people into the website.
 
 ### Colour
-
 For the colour scheme the website owner has chosen to implement a dark and light theme while also adding alot of vibrant colours to make it very eye catching. To narrow down the colours I used https://coolors.co/ an example of both the dark and light theme are shown below.
 <br>
 
