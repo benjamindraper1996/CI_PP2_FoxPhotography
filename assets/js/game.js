@@ -9,14 +9,14 @@ game.folderList = ["bluelight","graffitiHat","graffitiWall","greenscreen","pinkB
 game.gameStarted = false;
 // Sets up the game board
 game.img = {
-1: "1.jpg",
-2: "2.jpg",
-3: "3.jpg",
-4: "4.jpg",
-5: "5.jpg",
-6: "6.jpg",
-7: "7.jpg",
-8: "8.jpg",
+1: "1.webp",
+2: "2.webp",
+3: "3.webp",
+4: "4.webp",
+5: "5.webp",
+6: "6.webp",
+7: "7.webp",
+8: "8.webp",
 9: "",
 };
 
@@ -36,14 +36,14 @@ function setGameImage(folderpath) {
 if (folderpath == undefined) {
     var randomFolder = Math.floor((Math.random()*6));
     var folder = game.folderList[randomFolder]
-    document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.jpg"
+    document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.webp"
 
     for (i=0;i<game.slides.length; i++) {
         var slideImage = i + 1;
         game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
     }
 } else {
-    document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.jpg"
+    document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.webp"
         for(var i=0;i<game.slides.length;i++) {
             var slideImage = i + 1;
             game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"

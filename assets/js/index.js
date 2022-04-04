@@ -8,51 +8,51 @@ var curindex=0
 
 //Image Array for for 'black-white' folder.
 var blackwhite = new Array()
-blackwhite[0] = "assets/images/black-white/1.jpg";
-blackwhite[1] = "assets/images/black-white/2.jpg";
-blackwhite[2] = "assets/images/black-white/3.jpg";
+blackwhite[0] = "assets/images/black-white/1.webp";
+blackwhite[1] = "assets/images/black-white/2.webp";
+blackwhite[2] = "assets/images/black-white/3.webp";
 
 //Image Array for for 'graffiti-blue-hair' folder.
 var graffitiBlueHair = new Array()
-graffitiBlueHair[0] = "assets/images/graffiti-blue-hair/1.jpg";
-graffitiBlueHair[1] = "assets/images/graffiti-blue-hair/2.jpg";
-graffitiBlueHair[2] = "assets/images/graffiti-blue-hair/3.jpg";
+graffitiBlueHair[0] = "assets/images/graffiti-blue-hair/1.webp";
+graffitiBlueHair[1] = "assets/images/graffiti-blue-hair/2.webp";
+graffitiBlueHair[2] = "assets/images/graffiti-blue-hair/3.webp";
 
 //Image Array for for 'pink-windows' folder.
 var pinkWindows = new Array()
-pinkWindows[0] = "assets/images/pink-windows/1.jpg";
-pinkWindows[1] = "assets/images/pink-windows/2.jpg";
-pinkWindows[2] = "assets/images/pink-windows/3.jpg";
+pinkWindows[0] = "assets/images/pink-windows/1.webp";
+pinkWindows[1] = "assets/images/pink-windows/2.webp";
+pinkWindows[2] = "assets/images/pink-windows/3.webp";
 
 //Image Array for for 'graffiti-hat' folder.
 var graffitiHat = new Array()
-graffitiHat[0] = "assets/images/graffiti-hat/1.jpg";
-graffitiHat[1] = "assets/images/graffiti-hat/2.jpg";
-graffitiHat[2] = "assets/images/graffiti-hat/3.jpg";
+graffitiHat[0] = "assets/images/graffiti-hat/1.webp";
+graffitiHat[1] = "assets/images/graffiti-hat/2.webp";
+graffitiHat[2] = "assets/images/graffiti-hat/3.webp";
 
 //Image Array for for 'orange-bench' folder.
 var greenscreen = new Array()
-greenscreen[0] = "assets/images/greenscreen/1.jpg";
-greenscreen[1] = "assets/images/greenscreen/2.jpg";
-greenscreen[2] = "assets/images/greenscreen/3.jpg";
+greenscreen[0] = "assets/images/greenscreen/1.webp";
+greenscreen[1] = "assets/images/greenscreen/2.webp";
+greenscreen[2] = "assets/images/greenscreen/3.webp";
 
 //Image Array for for 'orange-bench' folder.
 var orangeBench = new Array()
-orangeBench[0] = "assets/images/orange-bench/1.jpg";
-orangeBench[1] = "assets/images/orange-bench/2.jpg";
-orangeBench[2] = "assets/images/orange-bench/3.jpg";
+orangeBench[0] = "assets/images/orange-bench/1.webp";
+orangeBench[1] = "assets/images/orange-bench/2.webp";
+orangeBench[2] = "assets/images/orange-bench/3.webp";
 
 //Image Array for for 'pink-bench' folder.
 var pinkBench = new Array()
-pinkBench[0] = "assets/images/pink-bench/1.jpg";
-pinkBench[1] = "assets/images/pink-bench/2.jpg";
-pinkBench[2] = "assets/images/pink-bench/3.jpg";
+pinkBench[0] = "assets/images/pink-bench/1.webp";
+pinkBench[1] = "assets/images/pink-bench/2.webp";
+pinkBench[2] = "assets/images/pink-bench/3.webp";
 
 //Image Array for for 'arcade' folder.
 var arcade = new Array()
-arcade[0] = "assets/images/arcade/1.jpg";
-arcade[1] = "assets/images/arcade/2.jpg";
-arcade[2] = "assets/images/arcade/3.jpg";
+arcade[0] = "assets/images/arcade/1.webp";
+arcade[1] = "assets/images/arcade/2.webp";
+arcade[2] = "assets/images/arcade/3.webp";
 
 var preload = new Array
 
