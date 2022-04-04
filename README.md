@@ -158,6 +158,13 @@ The website consists of four main pages and a 404 Error Page:
 ![ Dropdown navigation Menu open](documentation/features/menu.JPG)
 ![ Dropdown navigation Menu open](documentation/features/menu-dark.JPG)
 
+### Image Gallery
+- Featured on the Home page, the Gallery consists of 8 sets of 3 randomly rotating images each switching at a random time.
+- The gallery is designed to showcase some of the work the business has produced for their clients so that current and potential customers can see what sort of product is available.
+- The image gallery is fully responsive down to mobile size devices and continues to switch the images when in a smaller size.
+- User stories covered: 3,5,8,11
+![Image Gallery Before](documentation/features/gallery1.JPG)
+![Image Gallery After](documentation/features/gallery2.JPG)
 
 
 
