@@ -247,25 +247,23 @@ height: 500px;
 }
 
 #about-me-img {
-height: 500px;
-width: 500px;
+height: 490px;
+width: 490px;
 float: left;
-margin-left: 2.5%;
 }
 
 #about-me-text {
-height: 500px;
-max-width: 60%;
+height: 490px;
+max-width: 50%;
 background-color: var(--secondary-color);
 float: right;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-right: 2.5%;
 }
 
 #about-me-text p {
-font-size: 200%;
+font-size: 150%;
 text-align: center;
 margin: 0 10%;
 }
@@ -283,7 +281,7 @@ display: block;
 }
 
 .items {
-margin: 50px auto;
+margin: 20px auto;
 display: block;
 position: absolute;
 left: 50%;
@@ -486,7 +484,7 @@ height: 100%;
 
 .contact-images {
 display: inline-block;
-width: 33%;
+width: 32.5%;
 height: inherit;
 overflow: hidden;
 margin-bottom: 50px;
@@ -499,10 +497,16 @@ object-fit: cover;
 }
 
 /* Game Area Styles */
-.game-img-outer, #game-area-outer {
+ #game-area-outer {
 height: 655px;
 width: 95%;
 margin: auto;
+}
+
+.game-img-outer {
+    height: 800px;
+    width: 95%;
+    margin: auto;
 }
 
 .game-img, #game-area {
@@ -564,17 +568,18 @@ border: none;
 
 /* Image Selector area */
 .img-select {
-height: 100px;
-width: 100px;
+height: 120px;
+width: 120px;
 float: none;
 }
 
 .image-selector {
-float: left;
 text-align: center;
-width: 15%;
-height: 95%;
-margin-top: 2.5%;
+padding-top: 20px;
+}
+
+#image-select {
+    margin: 1%;
 }
 
 #image-select-title {
@@ -666,7 +671,6 @@ height: 300px;
 height: 300px;
 width: 300px;
 float: left;
-margin-left: 2.5%;
 }
 
 #about-me-text {
@@ -675,7 +679,7 @@ margin: 0, auto;
 }
 
 #about-me-text p {
-font-size: 125%;
+font-size: 100%;
 }
 
 .items .item {
@@ -692,23 +696,18 @@ height: 550px;
 margin-top: 5%;
 }
 
-.contact-images {
-width: 32.9%;
-}
-
 /* Game page styles */
-
-.image-selector {
-    width: 21.5%;
+.game-img-outer {
+    height: 910px;
 }
 
 #image-select-title {
 margin-top: 0;
 }
 
-#gameimage{
-    height: 500px;
-    width:500px;
+#image-select {
+    width: 100px;
+    height: 100px;
 }
 
 /* Footer styles */
@@ -752,25 +751,29 @@ height: 250px;
 }
 
 #about-me-img {
-height: 250px;
-width: 250px;
+height: 200px;
+width: 200px;
 }
 
 #about-me-text {
-height: 250px;
+height: 200px;
 }
 
 #about-me-text p {
-font-size: 100%;
+font-size: 70%;
 }
     
 .items .item {
-width: 300px;
-height: 300px;
+width: 200px;
+height: 200px;
+}
+
+.items {
+    height: 200px;
 }
 
 #carousel{
-height: 500px;
+height: 300px;
 }
 
 #contact{
@@ -782,7 +785,6 @@ height: 350px;
 }
 
 .contact-images{
-width: 32.8%;
 height: 300px;
 }
 
@@ -790,6 +792,24 @@ height: 300px;
 #image-select-title{
 font-size: 200%;
 margin-top: 10px;
+}
+
+.game-img-outer {
+    height: 710px;
+}
+
+#game-area-outer {
+    height: 500px;
+}
+
+.game-img, #game-area {
+    width: 400px;
+    height: 400px;
+}
+
+li.slide {
+    height: 133.33px;
+    width: 133.33px;
 }
 
 /* Contact page styles */
@@ -805,7 +825,7 @@ header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-h
 }
 
 #home-header, #about-header, #contact-header, #game-header, .my-work{
-    font-size: 60%;
+    font-size: 50%;
 }
 
 .headerbox-spacer, .imgsquare{
@@ -824,26 +844,33 @@ header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-h
 }
     
 #about-me-img {
-    height: 250px;
-    width: 250px;
-    margin-left: 21%;
-    margin-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 20px 20%;
 }
     
 #about-me-text {
-    width: 100%;
-    margin: auto;
+    width: 300px;
     height: 300px;
+    margin: 20px 20%;
+    max-width: none;
     float: none;
 }
     
 #about-me-text p {
     font-size: 85%;
 }
-        
+
+/* Contact Styles */
+
 .items .item {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+}
+
+.items {
+    height: 400px;
+    margin-bottom: 50px;
 }
 
 .items .button-container {
