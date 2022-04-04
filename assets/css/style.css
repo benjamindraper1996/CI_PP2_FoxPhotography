@@ -400,13 +400,13 @@ height: 750px;
 border: 3px solid #000;
 }
 
-.input-box, #messageBox {
+.input-box, #message {
 width: 75%;
 margin: 0 10%;
 border: 3px solid #000;
 }
 
-#messageBox {
+#message {
 height: 500px;
 resize: none;
 }

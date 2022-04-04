@@ -1,17 +1,25 @@
 /**
- * sendEmail to send email using contact.js, 
+ * Sends email using contact.js API. 
  * The API that is used is described here: https://www.emailjs.com/
- * @param contactForm [The contact form object]
  */
-function sendMail(contactForm) {
-    var tempParams = {
-        from_name: document.getElementById("name").value,
-        from_email: document.getElementById("email").value,
-        message: document.getElementById("messageBox").value,
-    };
-    //Sends the email using the specific service ID, Email template and parameters above.
-    emailjs.send('service_ghnjauc', 'template_m5hw7tk', tempParams)
-    .then(function(response){
-        console.log("Email Sent", response.status);
-    })
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('emailform').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.init("2FuQau4zwU9NqnwDl");
+        emailjs.sendForm('service_ghnjauc', 'template_m5hw7tk', this)
+            .then(function () {
+                // Email sent
+            }, function (error) {
+                // Error message
+                console.log('Failed to send email...', error);
+            });
+        message();
+    });
+});
+
+/**
+ * thanks the user for sending an email.
+ */
+function message() {
+    alert("Thank you for sending us a message!")
 }

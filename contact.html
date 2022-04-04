@@ -8,11 +8,6 @@
 <meta name="keywords" content="Photography,Photo,Photograph,Fox,Camera,Pictures,Essex,Professional,">
 <title>FoxPhotography | ContactPage</title>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("2FuQau4zwU9NqnwDl");
-})();
-</script>
 <!-- Favicon -->
 <link rel="icon" href="assets/images/favicon.ico">
 <!-- User style sheet -->
@@ -69,14 +64,15 @@ emailjs.init("2FuQau4zwU9NqnwDl");
 <section id="contact">
     <!-- Contact from -->
     <div id="form-outer">
-        <form id="emailform" onsubmit=" return sendMail(this);">
+        <form id="emailform">
             <label class="label" for="name">Name</label>
             <input id="name" type="text" name="name" class="input-box" required>
             <label class="label" for="email">Email Address</label>
             <input id="email" type="email" name="email" class="input-box" required>
             <label class="label" for="messageBox">Enquiry:</label>
-            <textarea id="messageBox" name="messageBox" placeholder="Write us a message here."></textarea>
-            <input id="submit" type="submit" value="Submit" />
+            <textarea id="message" name="message" placeholder="Write us a message here."></textarea>
+            <!--<input id="submit" type="submit" value="Submit" /> -->
+            <button id="submit" type="submit">Submit</button>
         </form>
     </div>
     <div id="location">
