@@ -846,13 +846,13 @@ header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-h
 #about-me-img {
     height: 300px;
     width: 300px;
-    margin: 20px 20%;
+    margin: 20px 15%;
 }
     
 #about-me-text {
     width: 300px;
     height: 300px;
-    margin: 20px 20%;
+    margin: 20px 15%;
     max-width: none;
     float: none;
 }
@@ -864,8 +864,8 @@ header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-h
 /* Contact Styles */
 
 .items .item {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .items {
