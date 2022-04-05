@@ -304,9 +304,23 @@ I used WAVE WebAIM web accessibility evaluation tool to ensure the website met h
 <img src="documentation/validation/accessibility-404.JPG">
 </details>
 
-
 ### Performance
-
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
+<details><summary>Home Page</summary>
+<img src="documentation/validation/lighthouse-performance-index.JPG">
+</details>
+<details><summary>About Page</summary>
+<img src="documentation/validation/lighthouse-performance-about.JPG">
+</details>
+<details><summary>Contact Page</summary>
+<img src="documentation/validation/lighthouse-performance-contact.JPG">
+</details>
+<details><summary>Game Page</summary>
+<img src="documentation/validation/lighthouse-performance-game.JPG">
+</details>
+<details><summary>404 Error Page</summary>
+<img src="documentation/validation/lighthouse-performance-404.JPG">
+</details>
 
 ### Performing tests on various devices
 
