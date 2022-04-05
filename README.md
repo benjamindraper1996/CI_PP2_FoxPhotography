@@ -513,3 +513,9 @@ Images and Logos not referenced below are owned by the developer.
 
 
 ## Acknowledgements
+
+I would like to take the opportunity to thank:
+- My mentor Mo Shami, for his feedback, advice, guidance, and support.
+- My partner Megan Fox, for her support advice, help testing, inspiration for the project and allowing me the time to work on my project.
+- Lee Webb on slack (lee webb2015) for his help pointing me in the right direction towards bootstrap.
+- To the Code Institute Slack community for providing help and support.
