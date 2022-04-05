@@ -465,6 +465,19 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-12.JPG">
 </details>
 
+14. As the business owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Slider Puzzle | Navigate to the Game page using either the footer or menu nav links, locate the Game, choose a picture for the game and start playing. | The puzzle game and slide move around the board as expected until the user wins the game. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-13.JPG">
+</details>
+
+15. As the business owner, I would like users to have easy access to social media links.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 
 ## Bugs
 
