@@ -379,10 +379,12 @@ The website was tested on the following browsers in both regular and incognito m
 </details>
 
 5. As a first-time user, I Want to Know how to find the business on social media.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
 6. As a returning user, I would like to see the business’ portfolio.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
@@ -393,6 +395,7 @@ The website was tested on the following browsers in both regular and incognito m
 </details>
 
 7. As a returning user, I would like to be able to find the business.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Business address | Navigate to the Contact page using either the footer or menu nav links, scroll down and locate the business address on the right. | Locate the business address. | Works as expected |
@@ -400,6 +403,17 @@ The website was tested on the following browsers in both regular and incognito m
 <details><summary>Screenshots</summary>
 <img src="documentation/user-story-testing/user-story-6-1.JPG">
 <img src="documentation/user-story-testing/user-story-6-2.JPG">
+</details>
+
+8. As a returning user, I would like to find out more information about the business.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About The Business | Navigate to the About page using either the footer or menu nav links and scroll down to locate the description of the business. | locate the description of the business. | Works as expected |
+| Contact Form | Navigate to the Contact page using either the footer or menu nav links, locate the Contact form, fill it out and submit the form. | Filling out and submitting the contact form will email the business with your query so they can get back to you. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-4.JPG">
+<img src="documentation/user-story-testing/user-story-2.JPG">
 </details>
 
 
