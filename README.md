@@ -378,6 +378,21 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-4.JPG">
 </details>
 
+5. As a first-time user, I Want to Know how to find the business on social media.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+6. As a returning user, I would like to see the business’ portfolio.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
+| Carousel | Navigate to the About page using either the footer or menu nav links, scroll down and locate the carousel. | Here you can see a Carousel showing off the business’ work. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-3-1.JPG">
+<img src="documentation/user-story-testing/user-story-3-2.JPG">
+</details>
+
+
 
 ## Bugs
 
