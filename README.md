@@ -358,6 +358,17 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-2.JPG">
 </details>
 
+3. As a first-time user, I want to see the business’ gallery.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
+| Carousel | Navigate to the About page using either the footer or menu nav links, scroll down and locate the carousel. | Here you can see a Carousel showing off the business’ work. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-3-1.JPG">
+<img src="documentation/user-story-testing/user-story-3-2.JPG">
+</details>
+
 
 ## Bugs
 
