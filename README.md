@@ -446,6 +446,14 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-2.JPG">
 </details>
 
+12. As the business owner, I want the website to act in a responsive manner on all devices.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Responsive Design | On any page you can view it on a PC, Laptop or Mobile or alternatively use Chrome Devtools to adjust the screen width to see the media queries working. | The media queries work to shrink the website down to fit down into various screen sizes. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-11.JPG">
+</details>
+
 
 ## Bugs
 
