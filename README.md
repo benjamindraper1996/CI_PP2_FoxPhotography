@@ -172,7 +172,7 @@ The website consists of four main pages and a 404 Error Page:
 - Featured across the whole website.
 - Consists of two separate divs that contain nav links and social media links that open in a new page.
 - The footer is fully responsive down to mobile size devices.
-- User stories covered: 1,8,10,11,12
+- User stories covered: 1,10,11,12
 ![Footer](documentation/features/footer.JPG)
 
 ### About The Business
@@ -187,10 +187,17 @@ The website consists of four main pages and a 404 Error Page:
 - This is fully responsive down to mobile size devices.
 - Shows the user a range of pictures taken by the business.
 - Arrow selectors to allow the user to navigate the slides back and forward.
-- User stories covered: 3,5,8,11
+- User stories covered: 3,6,9,12
 ![Carousel Before](documentation/features/carousel-before.JPG)
 ![Carousel After](documentation/features/carousel-after.JPG)
 
+### Contact Form
+- Featured on the contact page.
+- This is fully responsive down to mobile size devices.
+- Allows the user to contact the business about for any queries they might have.
+- This uses the EmailJS API to initiate an email chain between the person sending the contact form in and the business so that the business can reply in a prompt and professional manner.
+- User stories covered: 2,8,10,12
+![Contact Form](documentation/features/contact-form.JPG)
 
 
 ## Validation
