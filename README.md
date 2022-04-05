@@ -392,6 +392,15 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-3-2.JPG">
 </details>
 
+7. As a returning user, I would like to be able to find the business.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Business address | Navigate to the Contact page using either the footer or menu nav links, scroll down and locate the business address on the right. | Locate the business address. | Works as expected |
+| IFrame Map | Navigate to the Contact page using either the footer or menu nav links, scroll down and locate the map showing the business location. | Locate the map with the business location. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-6-1.JPG">
+<img src="documentation/user-story-testing/user-story-6-2.JPG">
+</details>
 
 
 ## Bugs
