@@ -213,6 +213,12 @@ The website consists of four main pages and a 404 Error Page:
 - User stories covered: 2,7,8,11,12
 ![IFrame Map](documentation/features/iframe-map.JPG)
 
+### Responsive Design
+- Featured on all pages of the website the responsive design allows the website to be displayed on many different device sizes and types.
+- User stories covered: 12
+![ Responsive Design Desktop](documentation/features/responsive-design-desktop.JPG)
+![ Responsive Design Mobile](documentation/features/ responsive-design-mobile.JPG)
+
 
 ## Validation
 
