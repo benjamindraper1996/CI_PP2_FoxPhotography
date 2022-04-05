@@ -225,6 +225,13 @@ The website consists of four main pages and a 404 Error Page:
 - User stories covered: 12,13
 ![404 Error Page](documentation/features/error-page.JPG)
 
+### Slider Puzzle
+- Featured on the game page of the website
+- This is fully responsive down to mobile size devices.
+- This is a way to showcase some of the work the company has done in a fun and interesting way.
+- User stories covered: 12,14
+![ Slider Puzzle ](documentation/features/slider-puzzle.JPG)
+
 
 ## Validation
 
