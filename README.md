@@ -369,6 +369,15 @@ The website was tested on the following browsers in both regular and incognito m
 <img src="documentation/user-story-testing/user-story-3-2.JPG">
 </details>
 
+4. As a first-time user, I want to know about the business.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About The Business | Navigate to the About page using either the footer or menu nav links and scroll down to locate the description of the business. | locate the description of the business. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-4.JPG">
+</details>
+
 
 ## Bugs
 
