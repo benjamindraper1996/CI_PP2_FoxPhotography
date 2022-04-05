@@ -439,6 +439,7 @@ The website was tested on the following browsers in both regular and incognito m
 </details>
 
 11. As the business owner, I want the users to be able to contact us easily.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Contact Form | Navigate to the Contact page using either the footer or menu nav links, locate the Contact form, fill it out and submit the form. | Filling out and submitting the contact form will email the business with your query so they can get back to you. | Works as expected |
@@ -447,11 +448,21 @@ The website was tested on the following browsers in both regular and incognito m
 </details>
 
 12. As the business owner, I want the website to act in a responsive manner on all devices.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Responsive Design | On any page you can view it on a PC, Laptop or Mobile or alternatively use Chrome Devtools to adjust the screen width to see the media queries working. | The media queries work to shrink the website down to fit down into various screen sizes. | Works as expected |
 <details><summary>Screenshots</summary>
 <img src="documentation/user-story-testing/user-story-11.JPG">
+</details>
+
+13. As the business owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 Error Page | From any page go to the URL bar and type in a URL that would not exist with the structure of the website. | The 404 Error page catches you and allows you to use the Nav menu to get back to the normal website. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-12.JPG">
 </details>
 
 
