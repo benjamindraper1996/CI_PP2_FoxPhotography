@@ -51,7 +51,6 @@
 - Provide a way for customers to contact the business for all queries.
 - Provide essential information to anyone who needs it.
 
-
 ## User Experience
 
 ### Target Audience
@@ -75,18 +74,20 @@
 2. As a first-time user, I would like to be able to contact the company.
 3. As a first-time user, I want to see the company’s gallery.
 4. As a first-time user, I want to know about the company.
+5. As a first-time user, I Want to Know how to find the business on social media.
  
 #### Returning User
-5. As a returning user, I would like to see the company’s portfolio.
-6. As a returning user, I would like to be able to find the company.
-7. As a returning user, I would like to find out more information about the company. 
+6. As a returning user, I would like to see the company’s portfolio.
+7. As a returning user, I would like to be able to find the company.
+8. As a returning user, I would like to find out more information about the company. 
  
 #### Company Owner 
-8. As the company owner, I want users to be able to see the gallery with ease.
-9. As the company owner, I want users to get to know the website. 
-10. As the company owner, I want the users to be able to contact us easily.
-11. As the company owner, I want the website to act in a responsive manner on all devices.
-12. As the company owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
+9. As the company owner, I want users to be able to see the gallery with ease.
+10. As the company owner, I want users to get to know the website. 
+11. As the company owner, I want the users to be able to contact us easily.
+12. As the company owner, I want the website to act in a responsive manner on all devices.
+13. As the company owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
+14. As the business owner, I would like users to have easy access to social media links.
 
 ## Design
 
@@ -153,7 +154,7 @@ The website consists of four main pages and a 404 Error Page:
 - The dropdown menu includes the social media icons that open a link in a new tab.
 - The dropdown menu includes the dark theme switch toggler option for users that prefer to use a darker screen.
 - The link that the user is currently hovering over is underlined for easy visibility.
-- user stories covered: 1,9,11
+- user stories covered: 1,10,12
 ![ Dropdown navigation Menu](documentation/features/hamburger.JPG)
 ![ Dropdown navigation Menu open](documentation/features/menu.JPG)
 ![ Dropdown navigation Menu open](documentation/features/menu-dark.JPG)
@@ -162,7 +163,7 @@ The website consists of four main pages and a 404 Error Page:
 - Featured on the Home page, the Gallery consists of 8 sets of 3 randomly rotating images each switching at a random time.
 - The gallery is designed to showcase some of the work the business has produced for their clients so that current and potential customers can see what sort of product is available.
 - The image gallery is fully responsive down to mobile size devices and continues to switch the images when in a smaller size.
-- User stories covered: 3,5,8,11
+- User stories covered: 3,6,9,12
 ![Image Gallery Before](documentation/features/gallery1.JPG)
 ![Image Gallery After](documentation/features/gallery2.JPG)
 
@@ -170,14 +171,14 @@ The website consists of four main pages and a 404 Error Page:
 - Featured across the whole website.
 - Consists of two separate divs that contain nav links and social media links that open in a new page.
 - The footer is fully responsive down to mobile size devices.
-- User stories covered: 1,7,9,10,11
+- User stories covered: 1,8,10,11,12
 ![Footer](documentation/features/footer.JPG)
 
 ### About The Business
 - Featured on the about page.
 - This consists of a picture of the owner and a description of the owner and the business.
 - This is fully responsive down to mobile size devices.
-- User stories covered: 4,7,11
+- User stories covered: 4,8,12
 ![ About The Business](documentation/features/about-the-business.JPG)
 
 
