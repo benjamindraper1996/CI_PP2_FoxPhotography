@@ -287,6 +287,22 @@ My CSS passed with no errors and one warning relating to importing of external s
 
 
 ### Accessibility
+I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with no errors and minimal warnings.
+<details><summary>Home Page</summary>
+<img src="documentation/validation/accessibility-index.JPG">
+</details>
+<details><summary>About Page</summary>
+<img src="documentation/validation/accessibility-about.JPG">
+</details>
+<details><summary>Contact Page</summary>
+<img src="documentation/validation/accessibility-contact.JPG">
+</details>
+<details><summary>Game Page</summary>
+<img src="documentation/validation/accessibility-game.JPG">
+</details>
+<details><summary>404 Error Page</summary>
+<img src="documentation/validation/accessibility-404.JPG">
+</details>
 
 
 ### Performance
