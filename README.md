@@ -256,10 +256,25 @@ The website consists of four main pages and a 404 Error Page:
 
 ![ Social Media Links ](documentation/features/social-media-links.JPG)
 
-
 ## Validation
 
 ### HTML Validation
+I used the W3C Validation Service to validate the HTML of the website.
+The Product page passed validation with no errors, The Home, Contact Us and About Us pages passed with one warning where the hero image had no header, this was intentional as it is only used to display the hero image.
+<details><summary>Home Page</summary>
+<img src="documentation/validation/validation-html-index.JPG">
+</details>
+<details><summary>About Page</summary>
+<img src="documentation/validation/validation-html-about.JPG">
+</details>
+<details><summary>Contact Page</summary>
+<img src="documentation/validation/validation-html-contact.JPG">
+</details>
+<details><summary>Game Page </summary>
+<img src="documentation/validation/validation-html-game.JPG">
+</details>
+<details><summary>404 Error Page </summary>
+<img src="documentation/validation/validation-html-404.JPG">
 
 
 ### CSS Validation
