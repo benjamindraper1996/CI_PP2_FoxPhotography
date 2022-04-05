@@ -338,6 +338,16 @@ The website was tested on the following browsers in both regular and incognito m
 - Microsoft Edge
 
 ### Testing user stories
+1. As a first-time user, I would like to be able to navigate through the website easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Dropdown Navigation Menu | On any page of the website locate the Hamburger icon in the top right, click to open the menu and click a Nav Link. | Clicking the Hamburger icon opens the menu and clicking a Nav link inside the menu takes you to the chosen page. | Works as expected |
+| Footer | On any page of the website scroll down to the bottom of the page and locate the Nav links in the footer. | Clicking the Nav links takes you to the chosen page. | Works as expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-1-1.JPG">
+<img src="documentation/user-story-testing/user-story-1-2.JPG">
+</details>
 
 
 
