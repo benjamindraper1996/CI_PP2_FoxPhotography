@@ -275,6 +275,7 @@ The Product page passed validation with no errors, The Home, Contact Us and Abou
 </details>
 <details><summary>404 Error Page </summary>
 <img src="documentation/validation/validation-html-404.JPG">
+</details>
 
 ### CSS Validation
 I used the W3C Jigsaw CSS Validation Service to validate the CSS of the website.
