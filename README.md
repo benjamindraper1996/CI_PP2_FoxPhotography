@@ -199,6 +199,14 @@ The website consists of four main pages and a 404 Error Page:
 - User stories covered: 2,8,10,12
 ![Contact Form](documentation/features/contact-form.JPG)
 
+### Business address
+- Featured on the contact page.
+- This is fully responsive down to mobile size devices.
+-  The business address allows users to find the business by their address, this can be used by some users with a Satnav or externally in Google maps.
+- User stories covered: 2,7,8,11,12
+![Business address](documentation/features/business-address.JPG)
+
+
 
 ## Validation
 
