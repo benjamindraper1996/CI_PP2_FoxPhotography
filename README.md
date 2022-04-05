@@ -87,7 +87,8 @@
 11. As the company owner, I want the users to be able to contact us easily.
 12. As the company owner, I want the website to act in a responsive manner on all devices.
 13. As the company owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
-14. As the business owner, I would like users to have easy access to social media links.
+14. As the business owner, I would like to incorporate a small game that utilises the work the business has produced.
+15. As the business owner, I would like users to have easy access to social media links.
 
 ## Design
 
@@ -180,6 +181,16 @@ The website consists of four main pages and a 404 Error Page:
 - This is fully responsive down to mobile size devices.
 - User stories covered: 4,8,12
 ![ About The Business](documentation/features/about-the-business.JPG)
+
+### Carousel
+- Featured on the about page.
+- This is fully responsive down to mobile size devices.
+- Shows the user a range of pictures taken by the business.
+- Arrow selectors to allow the user to navigate the slides back and forward.
+- User stories covered: 3,5,8,11
+![Carousel Before](documentation/features/carousel-before.JPG)
+![Carousel After](documentation/features/carousel-after.JPG)
+
 
 
 ## Validation
