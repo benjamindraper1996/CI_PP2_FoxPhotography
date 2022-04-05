@@ -216,8 +216,14 @@ The website consists of four main pages and a 404 Error Page:
 ### Responsive Design
 - Featured on all pages of the website the responsive design allows the website to be displayed on many different device sizes and types.
 - User stories covered: 12
-![ Responsive Design Desktop](documentation/features/responsive-design-desktop.JPG)
-![ Responsive Design Mobile](documentation/features/ responsive-design-mobile.JPG)
+![Responsive Design Desktop](documentation/features/responsive-design-desktop.JPG)
+![Responsive Design Mobile](documentation/features/responsive-design-mobile.JPG)
+
+### 404 Error Page
+- Prevents the user from getting lost by entering a url that does not exist and redirecting them to a custom error page directing them back to the main website.
+- This is fully responsive down to mobile size devices.
+- User stories covered: 12,13
+![404 Error Page](documentation/features/error-page.JPG)
 
 
 ## Validation
