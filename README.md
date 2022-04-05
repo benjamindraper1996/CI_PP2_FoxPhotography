@@ -206,6 +206,12 @@ The website consists of four main pages and a 404 Error Page:
 - User stories covered: 2,7,8,11,12
 ![Business address](documentation/features/business-address.JPG)
 
+### IFrame Map
+- Featured on the contact page.
+- This is fully responsive down to mobile size devices.
+- Allows the user to see the location of the business and the surrounding area
+- User stories covered: 2,7,8,11,12
+![IFrame Map](documentation/features/iframe-map.JPG)
 
 
 ## Validation
