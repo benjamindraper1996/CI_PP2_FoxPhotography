@@ -464,6 +464,9 @@ background:none
 .gmap_canvas iframe {
 height:inherit;
 width: 100%;
+border: 0;
+pointer-events: none;
+margin: 0;
 }
 
 /* Contact Page Image Styles */
@@ -810,7 +813,7 @@ li.slide {
 }
 
 /* Contact page styles */
-#address h1 {
+#address h2 {
     font-size: 120%;
 }
 }
