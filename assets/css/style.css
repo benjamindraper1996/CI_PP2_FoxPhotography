@@ -530,7 +530,8 @@ margin-bottom: 5%;
 #gameimage {
 height: inherit;
 width: inherit;
-object-fit: contain;
+display: inline-block;
+background-size: contain;
 }
 
 #game-area-outer {
@@ -573,12 +574,12 @@ width: 120px;
 float: none;
 }
 
-.image-selector {
+#image-selector {
 text-align: center;
 padding-top: 20px;
 }
 
-#image-select {
+.image-select {
     margin: 1%;
 }
 
@@ -705,7 +706,7 @@ margin-top: 5%;
 margin-top: 0;
 }
 
-#image-select {
+.image-select {
     width: 100px;
     height: 100px;
 }

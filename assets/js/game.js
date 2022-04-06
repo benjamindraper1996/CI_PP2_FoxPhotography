@@ -36,14 +36,14 @@ function setGameImage(folderpath) {
 if (folderpath == undefined) {
     var randomFolder = Math.floor((Math.random()*6));
     var folder = game.folderList[randomFolder]
-    document.getElementById('gameimage').src = "assets/images/game/"+folder+"/"+"frame.webp"
+    document.getElementById('gameimage').style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+"frame.webp"+"')"
 
     for (i=0;i<game.slides.length; i++) {
         var slideImage = i + 1;
         game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folder+"/"+game.img[slideImage]+"')"
     }
 } else {
-    document.getElementById('gameimage').src = "assets/images/game/"+folderpath+"/"+"frame.webp"
+    document.getElementById('gameimage').style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+"frame.webp"+"')"
         for(var i=0;i<game.slides.length;i++) {
             var slideImage = i + 1;
             game.slides[i].style.backgroundImage = "url('"+"assets/images/game/"+folderpath+"/"+game.img[slideImage]+"')"
