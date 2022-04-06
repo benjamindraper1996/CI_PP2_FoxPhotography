@@ -56,7 +56,7 @@ arcade[2] = "assets/images/arcade/3.webp";
 
 var preload = new Array
 
-//For loops to preoload images into arrays.
+//For loops to preload images into arrays.
 for (n=0;n<blackwhite.length;n++)
 for (n=0;n<graffitiBlueHair.length;n++)
 for (n=0;n<pinkWindows.length;n++)
