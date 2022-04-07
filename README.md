@@ -541,7 +541,13 @@ The website was tested on the following browsers in both regular and incognito m
 </details>
 
 ## Bugs
-
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| The user can submit a contact form input without a message | Add required attribute to message input field |
+| When a user submited a contact form the form was not received by the recipient address | Correct the contact.js variables with the appropiate user ID and email service |
+| On the about page when the page was view in a mobile format the hamburger menu was pushed out of the normal width of the page | reduce the size of the carousel images which forced the page to be wider than expected |
+| Game images when changed to percentages some slides to not move | Round down the percentages to allow for a margin of error when the slides move around each other |
+| Gallery array images would not rotate individually | Add a new if statement that calculates which one of the 8 pictures is going to randomly be chosen to change |
 
 ## Deployment
 
