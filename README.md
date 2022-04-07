@@ -1,7 +1,7 @@
 # Fox Photography
 (Developer: Benjamin Draper)
 
-![Mock-up image](documentation/wireframes/am-i-responsive.JPG)
+![Mock-up image](documentation/wireframes/am-i-responsive.jpg)
 
  [Live webpage](https://benjamindraper1996.github.io/CI_PP2_FoxPhotography/)
 
@@ -285,7 +285,6 @@ My CSS passed with no errors and three warning relating to importing of external
 </details>
 
 ### JavaScript Validation
-
 JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files.
 The Menu, Index and Contact JS files passed with minor issues. The about.js file Needed to be run with the new JS ES6 Features becuse of the arrow functions that were used, removing these were not possible for the stucture of the code, a regular function also gave an error. 
 <details><summary>index.js</summary>
@@ -337,7 +336,7 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="documentation/validation/lighthouse-performance-game.jpg">
 </details>
 <details><summary>404 Error Page</summary>
-<img src="documentation/validation/lighthouse-performance-404.JPG">
+<img src="documentation/validation/lighthouse-performance-404.jpg">
 </details>
 
 ### Performing tests on various devices
