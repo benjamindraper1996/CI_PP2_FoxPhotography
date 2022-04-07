@@ -305,7 +305,7 @@ The Menu, Index and Contact JS files passed with minor issues. The about.js file
 </details>
 
 ### Accessibility
-I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with no errors and minimal warnings.
+I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with one error each relating to the label in the menu, this was intentional to make the theme dark mode switch work.
 <details><summary>Home Page</summary>
 <img src="documentation/validation/accessibility-index.jpg">
 </details>
