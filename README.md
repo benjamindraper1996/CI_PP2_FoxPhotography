@@ -74,7 +74,7 @@
 2. As a first-time user, I would like to be able to contact the company.
 3. As a first-time user, I want to see the company’s gallery.
 4. As a first-time user, I want to know about the company.
-5. As a first-time user, I Want to Know how to find the business on social media.
+5. As a first-time user, I Want to know how to find the business on social media.
  
 #### Returning User
 6. As a returning user, I would like to see the company’s portfolio.
@@ -397,8 +397,7 @@ The website was tested on the following browsers in both regular and incognito m
 | Dropdown Navigation Menu | On any page of the website locate the Hamburger icon in the top right, click to open the menu and click a Nav Link. | Clicking the Hamburger icon opens the menu and clicking a Nav link inside the menu takes you to the chosen page. | Works as expected |
 | Footer | On any page of the website scroll down to the bottom of the page and locate the Nav links in the footer. | Clicking the Nav links takes you to the chosen page. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-1-1.JPG">
-<img src="documentation/user-story-testing/user-story-1-2.JPG">
+<img src="documentation/user-story-testing/user-story-1.jpg">
 </details>
 
 2. As a first-time user, I would like to be able to contact the business.
@@ -407,7 +406,7 @@ The website was tested on the following browsers in both regular and incognito m
 |-------------|------------|---------------------|-------------------|
 | Contact Form | Navigate to the Contact page using either the footer or menu nav links, locate the Contact form, fill it out and submit the form. | Filling out and submitting the contact form will email the business with your query so they can get back to you. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-2.JPG">
+<img src="documentation/user-story-testing/user-story-2.jpg">
 </details>
 
 3. As a first-time user, I want to see the business’ gallery.
@@ -417,8 +416,9 @@ The website was tested on the following browsers in both regular and incognito m
 | Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
 | Carousel | Navigate to the About page using either the footer or menu nav links, scroll down and locate the carousel. | Here you can see a Carousel showing off the business’ work. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-3-1.JPG">
-<img src="documentation/user-story-testing/user-story-3-2.JPG">
+<img src="documentation/user-story-testing/user-story-3-1.jpg">
+
+<img src="documentation/user-story-testing/user-story-3-2.jpg">
 </details>
 
 4. As a first-time user, I want to know about the business.
@@ -427,13 +427,17 @@ The website was tested on the following browsers in both regular and incognito m
 |-------------|------------|---------------------|-------------------|
 | About The Business | Navigate to the About page using either the footer or menu nav links and scroll down to locate the description of the business. | locate the description of the business. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-4.JPG">
+<img src="documentation/user-story-testing/user-story-4.jpg">
 </details>
 
-5. As a first-time user, I Want to Know how to find the business on social media.
+5. As a first-time user, I Want to know how to find the business on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Social Media Links | On any page open the hamburger menu or scroll down to the footer and locate the social media icons | When Clicked the social media link opens in a new tab | Works As Expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-5.jpg">
+</details>
 
 6. As a returning user, I would like to see the business’ portfolio.
 
@@ -442,8 +446,9 @@ The website was tested on the following browsers in both regular and incognito m
 | Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
 | Carousel | Navigate to the About page using either the footer or menu nav links, scroll down and locate the carousel. | Here you can see a Carousel showing off the business’ work. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-3-1.JPG">
-<img src="documentation/user-story-testing/user-story-3-2.JPG">
+<img src="documentation/user-story-testing/user-story-3-1.jpg">
+
+<img src="documentation/user-story-testing/user-story-3-2.jpg">
 </details>
 
 7. As a returning user, I would like to be able to find the business.
@@ -453,8 +458,7 @@ The website was tested on the following browsers in both regular and incognito m
 | Business address | Navigate to the Contact page using either the footer or menu nav links, scroll down and locate the business address on the right. | Locate the business address. | Works as expected |
 | IFrame Map | Navigate to the Contact page using either the footer or menu nav links, scroll down and locate the map showing the business location. | Locate the map with the business location. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-6-1.JPG">
-<img src="documentation/user-story-testing/user-story-6-2.JPG">
+<img src="documentation/user-story-testing/user-story-7.jpg">
 </details>
 
 8. As a returning user, I would like to find out more information about the business.
@@ -464,8 +468,9 @@ The website was tested on the following browsers in both regular and incognito m
 | About The Business | Navigate to the About page using either the footer or menu nav links and scroll down to locate the description of the business. | locate the description of the business. | Works as expected |
 | Contact Form | Navigate to the Contact page using either the footer or menu nav links, locate the Contact form, fill it out and submit the form. | Filling out and submitting the contact form will email the business with your query so they can get back to you. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-4.JPG">
-<img src="documentation/user-story-testing/user-story-2.JPG">
+<img src="documentation/user-story-testing/user-story-4.jpg">
+
+<img src="documentation/user-story-testing/user-story-2.jpg">
 </details>
 
 9. As the business owner, I want users to be able to see the gallery with ease.
@@ -475,8 +480,9 @@ The website was tested on the following browsers in both regular and incognito m
 | Image Gallery | On the home page scroll down and locate the image gallery. | Here you can see a rotating set of pictures showing off the business’ work. | Works as expected |
 | Carousel | Navigate to the About page using either the footer or menu nav links, scroll down and locate the carousel. | Here you can see a Carousel showing off the business’ work. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-3-1.JPG">
-<img src="documentation/user-story-testing/user-story-3-2.JPG">
+<img src="documentation/user-story-testing/user-story-3-1.jpg">
+
+<img src="documentation/user-story-testing/user-story-3-2.jpg">
 </details>
 
 10. As the business owner, I want users to get to know the website.
@@ -486,8 +492,7 @@ The website was tested on the following browsers in both regular and incognito m
 | Dropdown Navigation Menu | On any page of the website locate the Hamburger icon in the top right, click to open the menu and click a Nav Link. | Clicking the Hamburger icon opens the menu and clicking a Nav link inside the menu takes you to the chosen page. | Works as expected |
 | Footer | On any page of the website scroll down to the bottom of the page and locate the Nav links in the footer. | Clicking the Nav links takes you to the chosen page. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-1-1.JPG">
-<img src="documentation/user-story-testing/user-story-1-2.JPG">
+<img src="documentation/user-story-testing/user-story-1.jpg">
 </details>
 
 11. As the business owner, I want the users to be able to contact us easily.
@@ -496,7 +501,7 @@ The website was tested on the following browsers in both regular and incognito m
 |-------------|------------|---------------------|-------------------|
 | Contact Form | Navigate to the Contact page using either the footer or menu nav links, locate the Contact form, fill it out and submit the form. | Filling out and submitting the contact form will email the business with your query so they can get back to you. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-2.JPG">
+<img src="documentation/user-story-testing/user-story-2.jpg">
 </details>
 
 12. As the business owner, I want the website to act in a responsive manner on all devices.
@@ -505,7 +510,7 @@ The website was tested on the following browsers in both regular and incognito m
 |-------------|------------|---------------------|-------------------|
 | Responsive Design | On any page you can view it on a PC, Laptop or Mobile or alternatively use Chrome Devtools to adjust the screen width to see the media queries working. | The media queries work to shrink the website down to fit down into various screen sizes. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-11.JPG">
+<img src="documentation/user-story-testing/user-story-12.jpg">
 </details>
 
 13. As the business owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
@@ -514,22 +519,26 @@ The website was tested on the following browsers in both regular and incognito m
 |-------------|------------|---------------------|-------------------|
 | 404 Error Page | From any page go to the URL bar and type in a URL that would not exist with the structure of the website. | The 404 Error page catches you and allows you to use the Nav menu to get back to the normal website. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-12.JPG">
+<img src="documentation/user-story-testing/user-story-13.jpg">
 </details>
 
-14. As the business owner, I want users to get redirected to a custom 404 error page if they type in a wrong link into their browser.
+14. As the business owner, I would like to incorporate a small game that utilises the work the business has produced.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Slider Puzzle | Navigate to the Game page using either the footer or menu nav links, locate the Game, choose a picture for the game and start playing. | The puzzle game and slide move around the board as expected until the user wins the game. | Works as expected |
 <details><summary>Screenshots</summary>
-<img src="documentation/user-story-testing/user-story-13.JPG">
+<img src="documentation/user-story-testing/user-story-14.jpg">
 </details>
 
 15. As the business owner, I would like users to have easy access to social media links.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Social Media Links | On any page open the hamburger menu or scroll down to the footer and locate the social media icons | When Clicked the social media link opens in a new tab | Works As Expected |
+<details><summary>Screenshots</summary>
+<img src="documentation/user-story-testing/user-story-5.jpg">
+</details>
 
 ## Bugs
 
