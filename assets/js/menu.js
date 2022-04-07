@@ -4,11 +4,11 @@
  *  light and dark theme.
  */
 // Menu Variables
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+var menu = document.querySelector(".menu");
+var menuItems = document.querySelectorAll(".menuItem");
+var hamburger= document.querySelector(".hamburger");
+var closeIcon= document.querySelector(".closeIcon");
+var menuIcon = document.querySelector(".menuIcon");
 
 /**
  * toggleMenu switches between showing the dropdown navigation menu and closing it again.
@@ -25,9 +25,9 @@ if (menu.classList.contains("showMenu")) {
 hamburger.addEventListener("click", toggleMenu);
 
 //Theme Switcher variable.
-const themeSwitch = document.querySelector('input');
+var themeSwitch = document.querySelector('input');
 
 //Listens for when someone clicks on the slider to change the theme.
-themeSwitch.addEventListener('change', () => {
+themeSwitch.addEventListener('change', function() {
 document.body.classList.toggle('dark-theme');
 });

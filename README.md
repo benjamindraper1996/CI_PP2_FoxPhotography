@@ -260,64 +260,81 @@ The website consists of four main pages and a 404 Error Page:
 
 ### HTML Validation
 I used the W3C Validation Service to validate the HTML of the website.
-The Product page passed validation with no errors, The Home, Contact Us and About Us pages passed with one warning where the hero image had no header, this was intentional as it is only used to display the hero image.
+The Home and 404 pages, The About, Contact and Game pages passed with a Warning about a lack of a header, this is due to areas of the page requiring information without a header but div was not possible. The Contact page also has one addition warning that says there is an unnecessary script on page load, but this is required for the EmailJS form API to work, this was tested without the code and it will not function without it.
 <details><summary>Home Page</summary>
-<img src="documentation/validation/validation-html-index.JPG">
+<img src="documentation/validation/validation-html-index.jpg">
 </details>
 <details><summary>About Page</summary>
-<img src="documentation/validation/validation-html-about.JPG">
+<img src="documentation/validation/validation-html-about.jpg">
 </details>
 <details><summary>Contact Page</summary>
-<img src="documentation/validation/validation-html-contact.JPG">
+<img src="documentation/validation/validation-html-contact.jpg">
 </details>
 <details><summary>Game Page </summary>
-<img src="documentation/validation/validation-html-game.JPG">
+<img src="documentation/validation/validation-html-game.jpg">
 </details>
 <details><summary>404 Error Page </summary>
-<img src="documentation/validation/validation-html-404.JPG">
+<img src="documentation/validation/validation-html-404.jpg">
 </details>
 
 ### CSS Validation
 I used the W3C Jigsaw CSS Validation Service to validate the CSS of the website.
-My CSS passed with no errors and one warning relating to importing of external stylesheets.
+My CSS passed with no errors and three warning relating to importing of external stylesheets and dynamic variables.
 <details><summary>CSS Validation</summary>
-<img src="documentation/validation/validation-css-whole-page.JPG">
+<img src="documentation/validation/validation-css-whole-page.jpg">
 </details>
 
 ### JavaScript Validation
 
+JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files.
+The Menu, Index and Contact JS files passed with minor issues. The about.js file Needed to be run with the new JS ES6 Features becuse of the arrow functions that were used, removing these were not possible for the stucture of the code, a regular function also gave an error. 
+<details><summary>index.js</summary>
+<img src="documentation/validation/js-index.jpg">
+</details>
+<details><summary>about.js</summary>
+<img src="documentation/validation/js-about.jpg">
+</details>
+<details><summary>contact.js</summary>
+<img src="documentation/validation/js-contact.jpg">
+</details>
+<details><summary>game.js</summary>
+<img src="documentation/validation/js-game.jpg">
+</details>
+<details><summary>menu.js</summary>
+<img src="documentation/validation/js-menu.jpg">
+</details>
 
 ### Accessibility
 I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with no errors and minimal warnings.
 <details><summary>Home Page</summary>
-<img src="documentation/validation/accessibility-index.JPG">
+<img src="documentation/validation/accessibility-index.jpg">
 </details>
 <details><summary>About Page</summary>
-<img src="documentation/validation/accessibility-about.JPG">
+<img src="documentation/validation/accessibility-about.jpg">
 </details>
 <details><summary>Contact Page</summary>
-<img src="documentation/validation/accessibility-contact.JPG">
+<img src="documentation/validation/accessibility-contact.jpg">
 </details>
 <details><summary>Game Page</summary>
-<img src="documentation/validation/accessibility-game.JPG">
+<img src="documentation/validation/accessibility-game.jpg">
 </details>
 <details><summary>404 Error Page</summary>
-<img src="documentation/validation/accessibility-404.JPG">
+<img src="documentation/validation/accessibility-404.jpg">
 </details>
 
 ### Performance
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
 <details><summary>Home Page</summary>
-<img src="documentation/validation/lighthouse-performance-index.JPG">
+<img src="documentation/validation/lighthouse-performance-index.jpg">
 </details>
 <details><summary>About Page</summary>
-<img src="documentation/validation/lighthouse-performance-about.JPG">
+<img src="documentation/validation/lighthouse-performance-about.jpg">
 </details>
 <details><summary>Contact Page</summary>
-<img src="documentation/validation/lighthouse-performance-contact.JPG">
+<img src="documentation/validation/lighthouse-performance-contact.jpg">
 </details>
 <details><summary>Game Page</summary>
-<img src="documentation/validation/lighthouse-performance-game.JPG">
+<img src="documentation/validation/lighthouse-performance-game.jpg">
 </details>
 <details><summary>404 Error Page</summary>
 <img src="documentation/validation/lighthouse-performance-404.JPG">

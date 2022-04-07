@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
  * thanks the user for sending an email.
  */
 function message() {
-    alert("Thank you for sending us a message!")
+    alert("Thank you for sending us a message!");
 }
