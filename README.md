@@ -577,7 +577,9 @@ All of the pictures across the website were taken and edited by my partner Megan
 - [Favicon](assets/images/favicon.ico): Photo Created through <a href="https://favicon.io/">favicon.io</a>
 
 ### Code
-
+- The 404 page was made using the build guide on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site), I then reused the header, footer and found a relevant image for the body.
+- The EmailJS Code within the contact.js file was made with help from the [EmailJS Website](https://www.emailjs.com/) as well as some of my peers on GitHub, [Ana Runje](https://github.com/4n4ru/CI-P2-GuessingBee/blob/master/contact.html) and [Paul Meeneghan](https://github.com/pmeeny/CI-MS2-BicepMusicFanSite/blob/master/assets/js/send_email.js).
+- The sliding puzzle game takes a lot of inspiration from [T Adhikari](https://github.com/tadhikari/Javascript-Slider-Puzzle-Game) on GitHub, his project firstinspired me to design my own.
 
 ## Acknowledgements
 
