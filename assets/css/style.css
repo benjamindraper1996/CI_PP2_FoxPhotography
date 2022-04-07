@@ -193,7 +193,7 @@ transform: translateX(50px);
 
 /* Social networks icons in menu */
 #social-networks-menu{
-    text-align: center;
+text-align: center;
 }
 
 .social-networks-menu{
@@ -498,16 +498,16 @@ object-fit: cover;
 }
 
 /* Game Area Styles */
- #game-area-outer {
+#game-area-outer {
 height: 655px;
 width: 95%;
 margin: auto;
 }
 
 .game-img-outer {
-    height: 800px;
-    width: 95%;
-    margin: auto;
+height: 800px;
+width: 95%;
+margin: auto;
 }
 
 .game-img, #game-area {
@@ -519,7 +519,7 @@ transform: translate(10px, 25px);
 }
 
 .game-img {
-    display: block;
+display: block;
 }
 
 .game-img-outer {
@@ -560,7 +560,7 @@ background-size: contain;
 }
 
 .number {
-    display: none;
+display: none;
 }
 
 #blank {
@@ -581,7 +581,7 @@ padding-top: 20px;
 }
 
 .image-select {
-    margin: 1%;
+margin: 1%;
 }
 
 #image-select-title {
@@ -699,7 +699,7 @@ margin-top: 5%;
 
 /* Game page styles */
 .game-img-outer {
-    height: 910px;
+height: 910px;
 }
 
 #image-select-title {
@@ -707,8 +707,8 @@ margin-top: 0;
 }
 
 .image-select {
-    width: 100px;
-    height: 100px;
+width: 100px;
+height: 100px;
 }
 
 /* Footer styles */
@@ -763,14 +763,14 @@ height: 200px;
 #about-me-text p, #about-me-text h2 {
 font-size: 70%;
 }
-    
+
 .items .item {
 width: 200px;
 height: 200px;
 }
 
 .items {
-    height: 200px;
+height: 200px;
 }
 
 #carousel{
@@ -796,101 +796,126 @@ margin-top: 10px;
 }
 
 .game-img-outer {
-    height: 710px;
+height: 710px;
 }
 
 #game-area-outer {
-    height: 500px;
+height: 500px;
 }
 
 .game-img, #game-area {
-    width: 400px;
-    height: 400px;
+width: 400px;
+height: 400px;
 }
 
 li.slide {
-    height: 133.33px;
-    width: 133.33px;
+height: 133.33px;
+width: 133.33px;
 }
 
 /* Contact page styles */
 #address h2 {
-    font-size: 120%;
+font-size: 120%;
 }
 }
 
 /* media query for screen size 500px styles */
 @media screen and (max-width: 500px) {
 header, .hero-outer, #hero, .header-box, .about-header, .contact-header, .game-header {
-    height: 300px;
+height: 300px;
 }
 
 #home-header, #about-header, #contact-header, #game-header, .my-work{
-    font-size: 50%;
+font-size: 50%;
 }
 
 .headerbox-spacer, .imgsquare{
-    height: 250px;
+height: 250px;
 }
 /* About page styles */
 #about-me-outer {
-    width: 100%;
-    height: 500px;
+width: 100%;
+height: 500px;
 }
 
 #about-me {
-    width: 100%;
-    height: 200px;
-    float: none;
+width: 100%;
+height: 200px;
+float: none;
 }
-    
+
 #about-me-img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 15%;
+height: 300px;
+width: 300px;
+margin: 20px 15%;
 }
-    
+
 #about-me-text {
-    width: 300px;
-    height: 300px;
-    margin: 20px 15%;
-    max-width: none;
-    float: none;
+width: 300px;
+height: 300px;
+margin: 20px 15%;
+max-width: none;
+float: none;
 }
-    
+
 #about-me-text p, #about-me-text h2 {
-    font-size: 85%;
+font-size: 85%;
 }
 
 /* Contact Styles */
 
 .items .item {
-    width: 100px;
-    height: 100px;
+width: 100px;
+height: 100px;
 }
 
 .items {
-    height: 400px;
-    margin-bottom: 50px;
+height: 400px;
+margin-bottom: 50px;
 }
 
 .items .button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    z-index: 92;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+z-index: 92;
 }
 
 /* Contact form styles */
 #form-outer, #location {
-    width: 90%;
-    float: left;
-    margin: 20px 5%;
+width: 90%;
+float: left;
+margin: 20px 5%;
 }
 
 .contact-images {
-    width: 32%;
+width: 32%;
+}
+
+/* Game Styles */
+.game-img-outer {
+height: 560px;
+}
+
+#game-area-outer {
+height: 340px;
+}
+
+.img-select {
+height: 100px;
+width: 100px;
+}
+
+.game-img, #game-area {
+width: 300px;
+height: 300px;
+transform: translate(0px, 25px);
+}
+
+li.slide {
+width: 100px;
+height: 100px;
 }
 }
