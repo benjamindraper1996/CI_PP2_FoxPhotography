@@ -559,7 +559,13 @@ You can clone the repository by following these steps:
 Images and Logos not referenced below are owned by the developer.
 
 ### Media
+All of the pictures across the website were taken and edited by my partner Megan Fox for the purpose of this project unless referenced below. Some of the pictures referenced below might have been edited after being sourced.
 
+- [Facebook](assets/images/facebook.webp): Photo by <a href="https://www.pngitem.com/userpic/6733/">Fans 4actors</a> on <a href="https://www.pngitem.com/middle/iTJoT_instagram-logo-png-twitter-logo-facebook-instagram-png/?fbclid=IwAR0YJM8_ASjOEJe_oO0qUXKaflEt7dVFzQETBoTpCSG3OfJBFronl_Khs1w"> PNGITEM </a>
+- [Twitter](assets/images/twitter.webp): Photo by <a href="https://www.pngitem.com/userpic/6733/">Fans 4actors</a> on <a href="https://www.pngitem.com/middle/iTJoT_instagram-logo-png-twitter-logo-facebook-instagram-png/?fbclid=IwAR0YJM8_ASjOEJe_oO0qUXKaflEt7dVFzQETBoTpCSG3OfJBFronl_Khs1w"> PNGITEM </a>
+- [Instagram](assets/images/instagram.webp): Photo by <a href="https://www.pngitem.com/userpic/6733/">Fans 4actors</a> on <a href="https://www.pngitem.com/middle/iTJoT_instagram-logo-png-twitter-logo-facebook-instagram-png/?fbclid=IwAR0YJM8_ASjOEJe_oO0qUXKaflEt7dVFzQETBoTpCSG3OfJBFronl_Khs1w"> PNGITEM </a>
+- [404 Page](assets/images/404.webp): Photo by <a href="https://unsplash.com/@woodies11">Romson Preechawit</a> on <a href="https://unsplash.com/photos/Vy2cHqm0mCs"> Unsplash </a>
+- [Favicon](assets/images/favicon.ico): Photo Created through <a href="https://favicon.io/">favicon.io</a>
 
 ### Code
 
