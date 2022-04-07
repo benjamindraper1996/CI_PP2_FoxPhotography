@@ -149,7 +149,7 @@ The website consists of four main pages and a 404 Error Page:
 
 ## Features
 ### Dropdown navigation Menu
-- Featured on all Pages across the website.
+- Featured on all pages across the website.
 - The dropdown menu is fully responsive uses a hamburger style button across all sizes.
 - The dropdown menu includes links to allow users to navigate around the site easily.
 - The dropdown menu includes the social media icons that open a link in a new tab.
@@ -157,11 +157,16 @@ The website consists of four main pages and a 404 Error Page:
 - The link that the user is currently hovering over is underlined for easy visibility.
 - user stories covered: 1,10,12
 
-![ Dropdown navigation Menu](documentation/features/hamburger.JPG)
+<details><summary>Dropdown navigation Menu</summary>
+<img src="documentation/features/hamburger.jpg">
+</details>
+<details><summary>Dropdown navigation Menu Light</summary>
+<img src="documentation/features/menu.jpg">
+</details>
+<details><summary>Dropdown navigation Menu Dark</summary>
+<img src="documentation/features/menu-dark.jpg">
+</details>
 
-![ Dropdown navigation Menu open](documentation/features/menu.JPG)
-
-![ Dropdown navigation Menu open](documentation/features/menu-dark.JPG)
 
 ### Image Gallery
 - Featured on the Home page, the Gallery consists of 8 sets of 3 randomly rotating images each switching at a random time.
@@ -169,9 +174,12 @@ The website consists of four main pages and a 404 Error Page:
 - The image gallery is fully responsive down to mobile size devices and continues to switch the images when in a smaller size.
 - User stories covered: 3,6,9,12
 
-![Image Gallery Before](documentation/features/gallery1.JPG)
-
-![Image Gallery After](documentation/features/gallery2.JPG)
+<details><summary>Image Gallery Before</summary>
+<img src="documentation/features/gallery1.jpg">
+</details>
+<details><summary>Image Gallery After</summary>
+<img src="documentation/features/gallery2.jpg">
+</details>
 
 ### Footer
 - Featured across the whole website.
@@ -179,7 +187,9 @@ The website consists of four main pages and a 404 Error Page:
 - The footer is fully responsive down to mobile size devices.
 - User stories covered: 1,10,11,12
 
-![Footer](documentation/features/footer.JPG)
+<details><summary>Footer</summary>
+<img src="documentation/features/footer.jpg">
+</details>
 
 ### About The Business
 - Featured on the about page.
@@ -187,7 +197,9 @@ The website consists of four main pages and a 404 Error Page:
 - This is fully responsive down to mobile size devices.
 - User stories covered: 4,8,12
 
-![ About The Business](documentation/features/about-the-business.JPG)
+<details><summary>About The Business</summary>
+<img src="documentation/features/about-the-business.jpg">
+</details>
 
 ### Carousel
 - Featured on the about page.
@@ -196,9 +208,12 @@ The website consists of four main pages and a 404 Error Page:
 - Arrow selectors to allow the user to navigate the slides back and forward.
 - User stories covered: 3,6,9,12
 
-![Carousel Before](documentation/features/carousel-before.JPG)
-
-![Carousel After](documentation/features/carousel-after.JPG)
+<details><summary>Carousel Before</summary>
+<img src="documentation/features/carousel-before.jpg">
+</details>
+<details><summary>Carousel After</summary>
+<img src="documentation/features/carousel-after.jpg">
+</details>
 
 ### Contact Form
 - Featured on the contact page.
@@ -207,7 +222,12 @@ The website consists of four main pages and a 404 Error Page:
 - This uses the EmailJS API to initiate an email chain between the person sending the contact form in and the business so that the business can reply in a prompt and professional manner.
 - User stories covered: 2,8,10,12
 
-![Contact Form](documentation/features/contact-form.JPG)
+<details><summary>Contact Form</summary>
+<img src="documentation/features/contact-form.jpg">
+</details>
+<details><summary>Contact Form Email</summary>
+<img src="documentation/features/contact-form-email.jpg">
+</details>
 
 ### Business address
 - Featured on the contact page.
@@ -215,7 +235,9 @@ The website consists of four main pages and a 404 Error Page:
 -  The business address allows users to find the business by their address, this can be used by some users with a Satnav or externally in Google maps.
 - User stories covered: 2,7,8,11,12
 
-![Business address](documentation/features/business-address.JPG)
+<details><summary>Business address</summary>
+<img src="documentation/features/business-address.jpg">
+</details>
 
 ### IFrame Map
 - Featured on the contact page.
@@ -223,22 +245,29 @@ The website consists of four main pages and a 404 Error Page:
 - Allows the user to see the location of the business and the surrounding area
 - User stories covered: 2,7,8,11,12
 
-![IFrame Map](documentation/features/iframe-map.JPG)
+<details><summary>IFrame Map</summary>
+<img src="documentation/features/iframe-map.jpg">
+</details>
 
 ### Responsive Design
 - Featured on all pages of the website the responsive design allows the website to be displayed on many different device sizes and types.
 - User stories covered: 12
 
-![Responsive Design Desktop](documentation/features/responsive-design-desktop.JPG)
-
-![Responsive Design Mobile](documentation/features/responsive-design-mobile.JPG)
+<details><summary>Responsive Design Desktop</summary>
+<img src="documentation/features/responsive-design-desktop.jpg">
+</details>
+<details><summary>Responsive Design Mobile</summary>
+<img src="documentation/features/responsive-design-mobile.jpg">
+</details>
 
 ### 404 Error Page
 - Prevents the user from getting lost by entering a url that does not exist and redirecting them to a custom error page directing them back to the main website.
 - This is fully responsive down to mobile size devices.
 - User stories covered: 12,13
 
-![404 Error Page](documentation/features/error-page.JPG)
+<details><summary>404 Error Page</summary>
+<img src="documentation/features/error-page.jpg">
+</details>
 
 ### Slider Puzzle
 - Featured on the game page of the website
@@ -246,7 +275,9 @@ The website consists of four main pages and a 404 Error Page:
 - This is a way to showcase some of the work the company has done in a fun and interesting way.
 - User stories covered: 12,14
 
-![ Slider Puzzle ](documentation/features/slider-puzzle.JPG)
+<details><summary>Slider Puzzle</summary>
+<img src="documentation/features/slider-puzzle.jpg">
+</details>
 
 ### Social Media Links
 - Featured within the dropdown Nav menu and within the footer across the entire site.
@@ -254,7 +285,12 @@ The website consists of four main pages and a 404 Error Page:
 - Allows the user to access the business’ various social media accounts, all of which open in a new tab.
 - User stories covered: 12,15
 
-![ Social Media Links ](documentation/features/social-media-links.JPG)
+<details><summary>Social Media Links</summary>
+<img src="documentation/features/social-media-links.jpg">
+</details>
+<details><summary>Social Media Links Footer</summary>
+<img src="documentation/features/social-media-links-footer.jpg">
+</details>
 
 ## Validation
 
