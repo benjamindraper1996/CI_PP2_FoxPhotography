@@ -12,27 +12,28 @@
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requirements and Expectations](#user-requrements-and-expectations)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
-    2. [Colour](#colours)
+    2. [Colour](#colour)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
-    2. [Frameworks & Tools](#frameworks-&-tools)
+    2. [Frameworks & Tools](#frameworks--tools)
 5. [Features](#features)
 6. [Testing](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
-7. [Bugs](#Bugs)
+    1. [HTML Validation](#html-validation)
+    2. [CSS Validation](#css-validation)
+    3. [JavaScript Validation](#javascript-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatibility)
+    8. [Testing user stories](#testing-user-stories)
+7. [Bugs](#bugs)
 8. [Deployment](#deployment)
 9. [Credits](#credits)
 10. [Acknowledgements](#acknowledgements)
@@ -323,6 +324,7 @@ My CSS passed with no errors and three warning relating to importing of external
 ### JavaScript Validation
 JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files.
 The Menu, Index and Contact JS files passed with minor issues. The about.js file Needed to be run with the new JS ES6 Features becuse of the arrow functions that were used, removing these were not possible for the stucture of the code, a regular function also gave an error. 
+The Game JS file passed with no errors but has a number of warnings, given more time i would aim to eliminate these warnings and neaten up the code so that it performs better.
 <details><summary>index.js</summary>
 <img src="documentation/validation/js-index.jpg">
 </details>
