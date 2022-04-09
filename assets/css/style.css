@@ -163,6 +163,7 @@ align-items: flex-start;
 margin-left: 3%;
 overflow: hidden;
 background-color: var(--buttonbgd-color);
+text-indent: -200px
 }
 
 .switch span {
