@@ -342,7 +342,7 @@ The Game JS file passed with no errors but has a number of warnings, given more 
 </details>
 
 ### Accessibility
-I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with one error each relating to the label in the menu, this was intentional to make the theme dark mode switch work.
+I used WAVE WebAIM web accessibility evaluation tool to ensure the website met high accessibility standards. All pages passed with no errors.
 <details><summary>Home Page</summary>
 <img src="documentation/validation/accessibility-index.jpg">
 </details>
